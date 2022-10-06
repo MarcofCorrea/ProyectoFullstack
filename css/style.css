@@ -32,7 +32,9 @@
 .carousel-item {
    left:24%;
 }
-
+.card{
+    border-color:#ffffff;
+}             
 .card-wrapper {
     display:flex;
     justify-content: space-around;
