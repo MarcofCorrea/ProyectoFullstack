@@ -1,0 +1,33 @@
+/*Style de portada*/
+header h1{
+    font-style: bold;
+    font-size: 50px;
+}
+nav {
+    font-size: 50px;
+}
+/*Style de Calendario*/
+div {
+    text-align: center;
+    width: 300px;
+}
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+.first_day {
+    grid-column-start: 7;
+}
+.day_name {
+    background: #eee;
+    font-weight: bold;
+}
+/*Style Log In*/
+form {
+    text-align:right;
+}
+.clima a{
+    background: 300px;
+}
