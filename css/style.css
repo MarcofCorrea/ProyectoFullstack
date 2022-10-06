@@ -35,10 +35,6 @@
 .card{
     border-color:#ffffff;
 }             
-.card-wrapper {
-    display:flex;
-    justify-content: space-around;
-}
 .container-card {
     padding: 5px;
 }
