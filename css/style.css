@@ -30,8 +30,8 @@
     margin-top: 1rem;
 }
 .carousel-item {
-   left:24%;
-}
+    left:21%;
+ }
 .card{
     border-color:#ffffff;
 }             
@@ -108,10 +108,7 @@
 
 
 @media (min-width: 1200px){
-    .carousel-item {
-        left:20%;
-     }
-     .carousel-control-prev, .carousel-control-next {
+    .carousel-control-prev, .carousel-control-next {
         top:40%;
     }
 }
