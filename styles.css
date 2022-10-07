@@ -14,15 +14,7 @@ body {
       margin-left: 0px;
   }
   
-  .flexbox-container > div {
-      width: 50%;
-      padding: 15px;
-      padding-right: 25px;
 
-     
-    background: #fff;
-  }
-  
   .flexbox-container > div:first-child {
       margin-right: 15px;
       margin-left: px;
@@ -38,15 +30,15 @@ body {
     width: 700px;
     height: 580px;
     border-radius: 5px 5px 5px 5px;
-    padding-top: 0px;
+    
     
 }
 
 .imagenes_sub_notas{
     width: 500px;
-    height: 213px;
+    height: 220px;
     border-radius: 5px 5px 5px 5px;
-    padding-top: 8px;
+    
 
 }
 
@@ -54,56 +46,10 @@ body {
 /*ESTILO DE TITULOS / SUBTITLOS*/
 
 .Titulos_notas_secundarias{
-    padding-right: 110px;
+    padding-right: 111px;
 
 }
 
 .tipo_titulo{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.flex-row{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-left: 15px;
-}
-
-
-.flex-column{
-    
-    padding-left: 15px;
-    padding-right: 15px;
-    
-}
-
-
-.imagen_destacada{
-    width: 1000px;
-    height: 900px;
-
-}
-
-.imagenes_secundarios{
-    width: 600px;
-    height: 400px;
-
 }
