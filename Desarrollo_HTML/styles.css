@@ -1,0 +1,55 @@
+/* ESTILOS DE CAJAS*/
+
+
+body {
+    background: rgb(255, 254, 254);
+  }
+  
+  .flexbox-container {
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      padding-right: 150px;
+      padding-left: 60px;
+      margin-left: 0px;
+  }
+  
+
+  .flexbox-container > div:first-child {
+      margin-right: 15px;
+      margin-left: px;
+      padding-left: 25px;
+      padding-right: ;
+  }
+  
+
+
+/*ESTILO DE IMAGENES */
+
+.imagen_nota_destacada{
+    width: 700px;
+    height: 580px;
+    border-radius: 5px 5px 5px 5px;
+    
+    
+}
+
+.imagenes_sub_notas{
+    width: 500px;
+    height: 220px;
+    border-radius: 5px 5px 5px 5px;
+    
+
+}
+
+
+/*ESTILO DE TITULOS / SUBTITLOS*/
+
+.Titulos_notas_secundarias{
+    padding-right: 111px;
+
+}
+
+.tipo_titulo{
+    font-family: Arial, Helvetica, sans-serif;
+}
