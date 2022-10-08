@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 .e-shop-container {
     width: 100%;
     display: flex;
@@ -18,7 +19,7 @@
 }
 .e-shop__text h2 {
     margin-right: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Helvetica Neue',Helvetica,Arial;
     font-size: 1.3rem;
     text-transform: uppercase;
 }
@@ -30,11 +31,15 @@
     margin-top: 1rem;
 }
 .carousel-item {
-    left:21%;
+    left:20%;
+    
  }
 .card{
     border-color:#ffffff;
-}             
+}         
+.card-img {
+    filter:opacity(75%)
+}
 .container-card {
     padding: 5px;
 }
