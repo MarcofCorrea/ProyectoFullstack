@@ -56,7 +56,7 @@ h6 span {
 }
 
 .full-height {
-  min-height: 82vh;
+  min-height: 80vh;
 }
 
 [type="checkbox"]:checked,
@@ -70,7 +70,7 @@ h6 span {
   position: relative;
   display: block;
   text-align: center;
-  width: 70px;
+  width: 80px;
   height: 16px;
   border-radius: 8px;
   padding: 0;
@@ -100,7 +100,7 @@ h6 span {
 }
 
 .checkbox:checked+label:before {
-  transform: translateX(44px) rotate(-270deg);
+  transform: translateX(60px) rotate(-270deg);
 }
 
 .card-3d-wrap {
@@ -177,7 +177,7 @@ h6 span {
   line-height: 22px;
   letter-spacing: 0.5px;
   outline: none;
-  color: #000;
+  color: #020611;
   background-color: #ffffff;
   border: none;
   transition: all 200ms linear;
@@ -276,11 +276,11 @@ h6 span {
 .btn span {
   position: relative;
   z-index: 10;
-  transition: color 0.4s;
+  transition: color 0.6s;
  }
  
 .btn:hover span {
-  color: #fff;
+  color: #102770;
  }
  
 .btn::before, .btn::after {
@@ -305,15 +305,13 @@ h6 span {
   transform: translate3d(100%, 0, 0);
  } 
 .btn:hover{
-  background-color: #102770;
+  background-color: #96bdd1;
 }
-.btn:active::after{
-  background-color: #1026709f;
-}
+
 
 .logo {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 50px;
   display: block;
   z-index: 100;
