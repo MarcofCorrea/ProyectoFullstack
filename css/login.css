@@ -18,7 +18,6 @@ body {
   position: relative;
   text-align: center;
   background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
-  color: #fff;
 }
 
 a {
@@ -57,7 +56,7 @@ h6 span {
 }
 
 .full-height {
-  min-height: 86vh;
+  min-height: 82vh;
 }
 
 [type="checkbox"]:checked,
@@ -109,7 +108,6 @@ h6 span {
   width: 440px;
   max-width: 100%;
   height: 400px;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 800px;
   margin-top: 60px;
@@ -130,7 +128,7 @@ h6 span {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-image: url('../images/login-back.svg');
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 300%;
