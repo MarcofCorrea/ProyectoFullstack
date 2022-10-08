@@ -1,104 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Anzuelo</title>
-    <!-- Icono de la pestaña -->
-    <link rel="icon" type="image/png" href="images/El anzuelo-icono.png">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Hojas de estilo -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/waves.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Anzuelo</title>
+  <!-- Icono de la pestaña -->
+  <link rel="icon" type="image/png" href="images/El anzuelo-icono.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+
 </head>
+
 <body>
-   
 
+  <div class="container-login">
+    <!-- Logo -->
+    <a href="index.html" class="logo" target="_blank">
+      <img src="images/El-anzuelo_logo.png" alt="">
+    </a>
 
-      <div class="header">
-        <a href="index.html" class="logo" target="_blank">
-            <img src="images/El-anzuelo_logo.png" alt="">
-          </a>
-        
-          <div class="section">
-            <div class="container">
-              <div class="row full-height justify-content-center">
-                <div class="col-12 text-center align-self-center py-5">
-                  <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                    <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-                          <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                          <label for="reg-log"></label>
-                    <div class="card-3d-wrap mx-auto">
-                      <div class="card-3d-wrapper">
-                        <div class="card-front">
-                          <div class="center-wrap">
-                            <div class="section text-center">
-                              <h4 class="mb-4 pb-3">Log In</h4>
-                              <div class="form-group">
-                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-                                <i class="input-icon uil uil-at"></i>
-                              </div>  
-                              <div class="form-group mt-2">
-                                <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-                                <i class="input-icon uil uil-lock-alt"></i>
-                              </div>
-                              <a href="#" class="btn mt-4">submit</a>
-                                            <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-                                </div>
-                              </div>
-                            </div>
-                        <div class="card-back">
-                          <div class="center-wrap">
-                            <div class="section text-center">
-                              <h4 class="mb-4 pb-3">Sign Up</h4>
-                              <div class="form-group">
-                                <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-                                <i class="input-icon uil uil-user"></i>
-                              </div>  
-                              <div class="form-group mt-2">
-                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-                                <i class="input-icon uil uil-at"></i>
-                              </div>  
-                              <div class="form-group mt-2">
-                                <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-                                <i class="input-icon uil uil-lock-alt"></i>
-                              </div>
-                              <a href="#" class="btn mt-4">submit</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+<!-- Form -->
+    <div class="section">
+      <div class="container">
+        <div class="row full-height justify-content-center">
+          <div class="col-12 text-center align-self-center py-3">
+            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+              <h6 class="mb-0 pb-2"><span>Ingresar</span><span>Registrarse</span></h6>
+              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+              <label for="reg-log"></label>
+              <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                  <div class="card-front">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4 pb-3">Inicio de sesion</h4>
+                        <div class="form-group">
+                          <input type="email" name="logemail" class="form-style" placeholder="Email" id="logemail"
+                            required>
+                          <i class="input-icon bi bi-person-circle"></i>
                         </div>
+                        <div class="form-group mt-2">
+                          <input type="password" name="logpass" class="form-style" placeholder="Contraseña"
+                            id="logpass" required>
+                          <i class="input-icon bi bi-key"></i>
+                        </div>
+                        <a href="#index.html"><button class="btn mt-4"><span>Ingresar</span></button></a>
+                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">¿Olvidaste tu constraseña?</a></p>
                       </div>
                     </div>
                   </div>
+                  <!-- Registro -->
+                  <div class="card-back">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-2 pb-3">Resgistrarse</h4>
+                        <div class="form-group">
+                          <input type="text" name="sign-name" class="form-style" placeholder="Nombre" id="sign-name"
+                            required>
+                          <i class="input-icon bi-person-circle"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="text" name="sign-apellido" class="form-style" placeholder="Apellido" id="sign-apellido" required>
+                          <i class="input-icon bi-person-circle"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="email" name="sign-mail" class="form-style" placeholder="Email" id="sign-mail"
+                            required>
+                          <i class="input-icon bi-envelope"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="password" name="sign-pass" class="form-style" placeholder="Contraseña"
+                            id="sign-pass" autocomplete="off" required>
+                          <i class="input-icon bi bi-key" ></i>
+                        </div>
+                        <a href="#">
+                          <button class="mt-4 btn"><span>Registrarse</span></button> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-        <!--Waves Container-->
-        <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        </div>
+      </div>
+    </div>
+    <!--Waves Container-->
+    
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
         </g>
-        </svg>
-        </div>
-        <!--Waves end-->
-        
-        </div>
-        <!--Header ends-->
-        
+      </svg>
+    </div>
+  
+    <!--Waves end-->
+  </div>
+  <!--Login ends-->
+
 </body>
+
 </html>
