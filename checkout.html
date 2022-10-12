@@ -17,7 +17,7 @@
   <!-- normalize -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <!-- propia -->
-  <link rel="stylesheet" type="text/css" href="css/detalle.css">
+  <link rel="stylesheet" type="text/css" href="css/checkout.css">
 
 </head>
 
@@ -30,8 +30,7 @@
 
   <div class="checkout-container">
     <div class="form col-5">
-      <!-- <div class="col-8 mb-5 "> -->
-
+      <!-- Form -->
       <div class="p-3 p-lg-5  form-container">
         <ul class="nav nav-pills mb-3 nav-justified">
           <li class="nav-item">
@@ -87,41 +86,158 @@
           </div>
         </div>
 
-        <a href="shop-index.html">
-          <button class="btn"><span>Continuar</span></button>
+        <a href="/envio.html">
+          <button class="btn-cont"> Continuar
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
         </a>
 
       </div>
-
     </div>
 
 
-    <!-- </form> -->
+    <!-- Form ends -->
 
-
-    <div class="carrito-container col-6">
-      <h5> Tu carrito</h5>
-      <div class="card mb-3" style="max-width: 650px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="images/slide-1.jpg" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
+    <!-- Carrito -->
+    <div class="carrito-container col-5 mt-5  pt-2">
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <h5> Tu carrito</h5>
+          <div class="card shadow-0 border rounded-3">
             <div class="card-body">
-              <h5 class="card-title">Producto</h5>
-              <p class="card-text">Categoria</p>
-              <p class="card-text">Cantidad:1</p>
-              <h5 class="card-title">$99</h5>
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="image ">
+                    <img class="w-100" src="images/El-anzuelo_logo.png">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6 ms-4">
+                  <h5>Nombre del producto</h5>
+
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>categoria 1</span>
+                    <span class="text-primary"> • </span>
+                    <span>categoria 2</span>
+                    <span class="text-primary"> • </span>
+                    <span> categoria 3<br /></span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>Cantidad</span>
+                    <span class="text-primary"> : </span>
+                    <span>1</span>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h4 class="mb-1 me-1 mt-3">$13.99</h4>
+                  </div>
+
+                </div>
+                <div class="col-md-5 col-lg-3 col-xl-2">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger btn-sm" type="button">
+                      <i class="bi bi-trash3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- item -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <div class="card shadow-0 border rounded-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="image ">
+                    <img class="w-100" src="images/El-anzuelo_logo.png">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6 ms-4">
+                  <h5>Nombre del producto</h5>
 
-     
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>categoria 1</span>
+                    <span class="text-primary"> • </span>
+                    <span>categoria 2</span>
+                    <span class="text-primary"> • </span>
+                    <span> categoria 3<br /></span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>Cantidad</span>
+                    <span class="text-primary"> : </span>
+                    <span>1</span>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h4 class="mb-1 me-1 mt-3">$13.99</h4>
+                  </div>
 
+                </div>
+                <div class="col-md-5 col-lg-3 col-xl-2">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger btn-sm" type="button">
+                      <i class="bi bi-trash3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <div class="card shadow-0 border rounded-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="image ">
+                    <img class="w-100" src="images/El-anzuelo_logo.png">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6 ms-4">
+                  <h5>Nombre del producto</h5>
+
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>categoria 1</span>
+                    <span class="text-primary"> • </span>
+                    <span>categoria 2</span>
+                    <span class="text-primary"> • </span>
+                    <span> categoria 3<br /></span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>Cantidad</span>
+                    <span class="text-primary"> : </span>
+                    <span>1</span>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h4 class="mb-1 me-1 mt-3">$13.99</h4>
+                  </div>
+
+                </div>
+                <div class="col-md-5 col-lg-3 col-xl-2">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger btn-sm" type="button">
+                      <i class="bi bi-trash3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
+
 
 
 
