@@ -1,3 +1,4 @@
+/*SECCION E-SHOP*/
 * {
     margin:0;
     padding:0;
@@ -113,3 +114,20 @@
         top:40%;
     }
 }
+
+/*FIN SECCION E-SHOP*/
+
+
+
+
+/* Slider */
+
+.carousel-item{
+
+    width: 100vw;
+    height: 60vh;
+
+    align-items: center
+  }
+
+
