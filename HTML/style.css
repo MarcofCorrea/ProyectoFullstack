@@ -1,0 +1,14 @@
+section {
+    background-color: #aaaaff;
+    width: 800px;
+    text-align: center;
+}
+div {
+    background-color: red;
+    display: inline-block;
+    padding: 5px 5px;
+    text-align: top;
+}
+h3 {
+    display: flex;
+}
