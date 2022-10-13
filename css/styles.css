@@ -1,10 +1,19 @@
-/*SECCION E-SHOP*/
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+/* slide home */
+.home{
 
+    width: 100vw;
+    height: 60vh;
+
+    align-items: center
+  }
+
+/*SECCION E-SHOP*/
 .e-shop-container {
     width: 100%;
     display: flex;
@@ -28,10 +37,10 @@
     margin-top: 20px;
     font-size: .8rem;
 } 
-.slide {
+.slide-shop {
     margin-top: 1rem;
 }
-.carousel-item {
+.carousel-item-shop {
     left:20%;
     
  }
@@ -44,7 +53,7 @@
 .container-card {
     padding: 5px;
 }
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev.prev, .carousel-control-next.next {
     width: 100%;
     width: 60px;
     height: 60px;
@@ -52,11 +61,11 @@
     background-color: #0075ff;
     border-radius: 50%;
 }
-.carousel-control-prev >i , .carousel-control-next >i {
+.carousel-control-prev.prev >i , .carousel-control-next.next >i {
     color:#ffffff;
     font-size: 2rem;
 }
-
+/* btn */
 .btn-more {
     outline: none;
     cursor: pointer;
@@ -110,7 +119,7 @@
 
 
 @media (min-width: 1200px){
-    .carousel-control-prev, .carousel-control-next {
+    .carousel-control-prev.prev, .carousel-control-next.next {
         top:40%;
     }
 }
@@ -120,14 +129,5 @@
 
 
 
-/* Slider */
-
-.carousel-item{
-
-    width: 100vw;
-    height: 60vh;
-
-    align-items: center
-  }
 
 
