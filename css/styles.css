@@ -14,9 +14,14 @@
 
 
 /*SECCION E-SHOP*/
-
+.e-shop {
+    margin: 3% 0 4% 0;
+    display: flex;
+    justify-content: center;
+}
 .e-shop-container {
-    width: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,14 +59,16 @@
 .container-card {
     padding: 5px;
 }
-.prev, .next {
+.carousel-control-prev.prev, .carousel-control-next.next {
     width: 60px;
     height: 60px;
     top:35%;
     background-color: #0075ff;
     border-radius: 50%;
 }
-.prev > i , .next > i {
+.carousel-control-prev.prev > i , .carousel-control-next.next > i {
+    padding-left: 1rem;
+    width: 100%;
     color:#ffffff;
     font-size: 2rem;
 }
