@@ -1,19 +1,14 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-}
-
 a {
     text-decoration: none;
 }
 
 header {
     display: flex;
-    height: 70px;
+    height: 100px;
+    padding: 0 40px;
     background: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
 
 }
 
