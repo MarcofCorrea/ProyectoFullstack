@@ -7,8 +7,8 @@
   
 
 .checkout-container {
-    padding-top: 30px;
-    height: 100vh;
+    padding-top: 20px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -23,6 +23,9 @@
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
+}
+.form-container h3 {
+    font-size: 1.5rem;
 }
 
 .form-control {

@@ -6,11 +6,10 @@
 }
 /* slide home */
 .home{
-
     width: 100vw;
     height: 60vh;
-
     align-items: center
+
   }
 
 
@@ -55,15 +54,14 @@
 .container-card {
     padding: 5px;
 }
-.carousel-control-prev.prev, .carousel-control-next.next {
-    width: 100%;
+.prev, .next {
     width: 60px;
     height: 60px;
     top:35%;
     background-color: #0075ff;
     border-radius: 50%;
 }
-.carousel-control-prev.prev >i , .carousel-control-next.next >i {
+.prev > i , .next > i {
     color:#ffffff;
     font-size: 2rem;
 }
@@ -121,7 +119,7 @@
 
 
 @media (min-width: 1200px){
-    .carousel-control-prev.prev, .carousel-control-next.next {
+    .prev, .next {
         top:40%;
     }
 }

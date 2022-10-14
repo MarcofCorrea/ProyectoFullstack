@@ -1,5 +1,4 @@
 *{
-    overflow-x: hidden;
     text-decoration: none;
 }
 
@@ -11,7 +10,7 @@
 /* FOOTER */
 
 footer{
-    width: 100vw;
+    width: 100%;
     margin-top: 20px;
     padding: 4px 0px;  
     background-color: #d0f0f8; 
@@ -91,6 +90,7 @@ footer{
     margin-bottom: 30px;
     color: #343434;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .box__footer a{
