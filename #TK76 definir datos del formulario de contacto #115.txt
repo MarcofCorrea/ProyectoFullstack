@@ -1,7 +1,0 @@
-El formulario puede tener los campos:
-
-_Nombres y apellidos.
-_Email.
-_Teléfono.
-_Dirección de residencia.
-_Motivo de consulta.
