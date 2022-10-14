@@ -8,7 +8,7 @@
 
 .checkout-container {
     padding-top: 30px;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -19,9 +19,6 @@
 /* Formulario */
 .form-container {
     background: white;
-    border-radius: 10px;
-    /* border: 0 none; */
-    /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
     padding: 10px 30px;
     box-sizing: border-box;
     width: 80%;
@@ -37,7 +34,7 @@
 
 .form-group {
     margin-bottom: 20px;
-    ;
+;
 }
 
 /* Botón */
