@@ -16,6 +16,8 @@
   <!-- Hojas de estilo -->
   <!-- normalize -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <!-- Header -->
+  <link rel="stylesheet" type="text/css" href="css/header.css">
   <!-- propia -->
   <link rel="stylesheet" type="text/css" href="css/checkout.css">
 
@@ -23,9 +25,34 @@
 
 <body>
   <!-- Header -->
+    <header>
+      <a ref="index.html" class="logo">
+        <img src="./images/identidad/El-anzuelo-logo.png" alt="logo de el anzuelo">
+      </a>
+      <div>
+        <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+        <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+  
+        <a href="login-registro.html">
+          <button class="btn-more"><span>Ingresar</span></button>
+        </a>
+      </div>
+    </header>
+    <!-- NAV MENU -->
+    <nav class="menu-nav">
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">CALENDARIO</a></li>
+          <li><a href="#">E-SHOP</a></li>
+          <li><a href="#">FORO</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
 
-
-  <!-- Header ends -->
+  <!-- Header / nav -->
   <!-- e-Shop - detalle de envío -->
 
   <div class="checkout-container">
