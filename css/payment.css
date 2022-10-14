@@ -7,7 +7,7 @@
 
 
 .checkout-container {
-    padding-top: 150px;
+    padding-top: 30px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -99,3 +99,10 @@
 }
 
 
+   /* Carrito */
+
+   .btn {
+    width:35px;
+    height: 35px;
+    border-radius: 100%;
+   }
