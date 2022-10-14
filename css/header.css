@@ -8,9 +8,8 @@ a {
 }
 
 header {
-
     display: flex;
-    height: 80px;
+    height: 70px;
     background: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
