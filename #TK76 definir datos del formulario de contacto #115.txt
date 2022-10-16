@@ -1,0 +1,6 @@
+El formulario tiene los campos:
+
+_Nombre
+_E-mail
+_Tema de consulta
+_Mensaje

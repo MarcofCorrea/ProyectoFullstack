@@ -1,0 +1,10 @@
+Datos requeridos para el perfil:
+
+_Nombre
+_Apellido
+_CUIL/CUIT
+_Sexo
+_Fecha_de_nacimiento
+_Pais
+_Provincia
+_Localidad
