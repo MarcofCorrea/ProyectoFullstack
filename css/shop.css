@@ -1,4 +1,11 @@
 
+/* Slider */
+.carousel-item {
+  width: 100vw;
+  height: 60vh;
+  align-items: center;
+}
+
 /*Section */
 .cat {
   text-align: center;
