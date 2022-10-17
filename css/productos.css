@@ -3,7 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
+.container-shop {
+    margin-top: 2rem;;
+}
 .section {
     display: block;
 }
