@@ -58,3 +58,8 @@
    }
 
   /* Agregar responsive */
+  .btn-delete {
+    width:35px;
+    height: 35px;
+    border-radius: 100%;
+   }
