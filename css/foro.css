@@ -142,3 +142,8 @@ div i{
 
     align-items: center
   }
+
+  table,td,th{
+    border: 3px solid lightblue;
+    margin: 50px;
+}
