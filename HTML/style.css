@@ -4,11 +4,11 @@ body {
   color: #5a5a5a;
   align-items: center ;
 }
-.marketing .col-lg-1 {
+.marketing .col-lg-2 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.marketing .col-lg-1 p {
+.marketing .col-lg-2 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
