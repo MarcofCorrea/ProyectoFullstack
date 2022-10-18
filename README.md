@@ -21,7 +21,7 @@ En este repositorio se encuentra todo lo relacionado al **Frontend** y **Backend
 
 ![DER (1)](https://user-images.githubusercontent.com/99567012/196313887-6753be9b-06be-4f64-9051-bd14bd6b9dcf.png)
 
-<div>
+</div>
 
 ## ✅ Manejo de la App
 _Próximamente_
