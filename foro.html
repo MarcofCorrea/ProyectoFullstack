@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Anzuelo</title>
+    <link rel="shortcut icon" href="./images/identidad/El-anzuelo-icono.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Estilos Header Footer-->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- Estilos-->
+    <link rel="stylesheet" href="./css/foro.css">
+
+</head>
+
+<body>
+      <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+
+    <img src="./images/identidad/El-anzuelo-logo.png" alt="logo de el anzuelo">
+
+    </a>
+    <div>
+      <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+      <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+
+      <a href="login-registro.html">
+        <button class="btn-more"><span>Ingresar</span></button>
+      </a>
+    </div>
+  </header>
+  <!-- NAV MENU -->
+  <nav>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="calendarios.html">CALENDARIO</a></li>
+        <li><a href="shop.html">E-SHOP</a></li>
+        <li><a href="#">FORO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!--Introduccion-->
+    <h1 style="padding-left: 45%;" class="display-1">Foro</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/foro/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Resuelve tus dudas</h5>
+                    <p>o Ayuda a otros con las suyas</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/foro/slide2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Interactua con la comunidad</h5>
+                    <p>Comparte tips e información</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/foro/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cuenta acnedotas</h5>
+                    <p>Lee y comparte historias</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--nuevo post-->
+    <p>
+        <button style="margin-left: 45%;" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            + Nueva entrada
+        </button>
+    </p>
+    <div style="min-height: 120px;">
+        <div style="padding-left: 40%;" class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Escriba su Titulo">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Publicar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Tabla de foro-->
+    <div style="margin: 50px;" class="d-flex justify-content-center">
+        <table class="table table-striped">
+            <thead>
+                <tr class="table-info">
+                    <th scope="col"></th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th width="50px" scope="row"><img width="30px" src="images/foro/FoodyIcons_color-01-512.webp"
+                            class="rounded-5" alt="imagen de usuario"></th>
+                    <td>
+                        <blockquote class="blockquote">
+                            <p>Pesca en san luis</p>
+                        </blockquote>
+                    </td>
+                    <td>@pescador3000</td>
+                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop">Leer</button>
+
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop4"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Pesca en san luis</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                el rio bla bla bla
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="50px" scope="row"><img width="30px" src="images/foro/imagen user 5.jpg" class="rounded-5"
+                            alt="imagen de usuario"></th>
+                    <td>
+                        <blockquote class="blockquote">
+                            <p>Formas de hacer un bagre</p>
+                        </blockquote>
+                    </td>
+                    <td>@Masterfish69</td>
+                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">Leer</button>
+
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop3"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Formas de hacer un bagre</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                limon y sal parrilla
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="50px" scope="row"><img width="30px" src="images/foro/pez_user3.png" class="rounded-5"
+                            alt="imagen de usuario"></th>
+                    <td>
+                        <blockquote class="blockquote">
+                            <p>Mejores epocas para pescar</p>
+                        </blockquote>
+                    </td>
+                    <td>@Camaroncin</td>
+                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">Leer</button>
+
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Mejores epocas para pescar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                el rio bla bla bla
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="50px" scope="row"><img width="30px" src="images/foro/pez_user2.png" class="rounded-5"
+                            alt="imagen de usuario"></th>
+                    <td>
+                        <blockquote class="blockquote">
+                            <p>Pez de 500 kg</p>
+                        </blockquote>
+                    </td>
+                    <td>@elSardina</td>
+                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">Leer</button>
+
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Pez de 500 kg</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                Alto pez
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+    <!--Reglas-->
+    <div class="d-flex justify-content-center">
+        <div class="row col-11 ">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Reglas</h5>
+                        <p class="card-text">Sé respetuoso.<br />Manten la temática de la página.<br />No spam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recomendaciones</h5>
+                        <p class="card-text">No compartas información personal.<br />Ayuda a otros con sus
+                            dudas.<br />Disfruta el sitio<br /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container__footer">
+          <div class="box__footer">
+            <div class="logo-footer">
+              <img src="images/identidad/El-anzuelo-logo.png" alt="">
+            </div>
+            <div class="subscribe-footer">
+              <div class="group-subs">
+                <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
+                  autocomplete="off">
+                <input class="button--submit" value="Subscribite" type="submit">
+              </div>
+            </div>
+          </div>
+          <div class="box__footer">
+            <h2>Soluciones</h2>
+            <a href="https://www.google.com">App Desarrollo</a>
+            <a href="#">App Marketing</a>
+            <a href="#">IOS Desarrollo</a>
+            <a href="#">Android Desarrollo</a>
+          </div>
+    
+          <div class="box__footer">
+            <h2>Compañia</h2>
+            <a href="#">Acerca de</a>
+            <a href="#">Trabajos</a>
+            <a href="#">Procesos</a>
+            <a href="#">Servicios</a>
+          </div>
+    
+          <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+          </div>
+    
+        </div>
+        <div class="box__copyright">
+          <hr>
+          <p></b>El anzuelo</p>
+        </div>
+      </footer>
+    
+
+
+
+
+
+    <!--Direccion Boostrap js-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
