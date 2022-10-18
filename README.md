@@ -14,9 +14,14 @@ En este repositorio se encuentra todo lo relacionado al **Frontend** y **Backend
 
 - En la carpeta [base de datos](https://github.com/MarcofCorrea/ProyectoFullstack/tree/main/base%20de%20datos) podrá encontrar el script , DER y Modelo entidad-relación.
 
-- A continuación se incluye el Diagrama Entidad - Relación (DER) utilizado en la Base de Datos Relacional y que posteriormente se traduce en los Modelos o Entidades del Backend:
+- A continuación se incluye el Diagrama Entidad - Relación (DER) y el Modelo Relacional al cual se ha llegado y que posteriormente se traduce en los Modelos o Entidades del Backend:
+<div align="center">
+
+![El_anzuelo_Entidad-relacion](https://user-images.githubusercontent.com/99567012/196561043-996df35f-eab2-40cb-8a7a-6e903adaaf35.jpeg)
 
 ![DER (1)](https://user-images.githubusercontent.com/99567012/196313887-6753be9b-06be-4f64-9051-bd14bd6b9dcf.png)
+
+<div>
 
 ## ✅ Manejo de la App
 _Próximamente_
