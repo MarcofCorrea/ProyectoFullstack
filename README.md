@@ -4,6 +4,8 @@
 En este repositorio se encuentra todo lo relacionado al **Frontend** y **Backend** del proyecto realizado como parte del cursado de la **[Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales](https://ispc.prod.tucampus.org/tecnicatura-web/)**  del ISPC. Para más información relacionada al proyecto , invitamos a recorrer la [Wiki](https://github.com/MarcofCorrea/ProyectoFullstack/wiki)
 
 ## 📝 Descripción
+- En la carpeta [Documentación](https://github.com/MarcofCorrea/ProyectoFullstack/tree/main/Documentaci%C3%B3n) podrá encontrar Mapa de sitio así como las funcionalidades pretendidas y esquemas de la web.
+
 - ***Portal de Pesca - El anzuelo*** realizado como Proyecto del Modulo Programador Fullstack de la **[Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales](https://ispc.prod.tucampus.org/tecnicatura-web/)**  del ISPC.
 
 - En cuanto al **Frontend** se trata de la realización de una página utilizando tecnologías como **HTML, CSS, y Bootstrap** en una primera instancia, para luego añadir JavaScript. 
