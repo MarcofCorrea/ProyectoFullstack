@@ -17,7 +17,7 @@
 /* ==================== */
 /* btn-news */
 /* cambios en el botón */
-.btn-news {
+/* .btn-news {
     outline: none;
     cursor: pointer;
     border: 1px solid #0075ff;
@@ -65,7 +65,7 @@
    
 .btn-news:hover::before {
     transform: translate3d(100%, 0, 0);
-   } 
+   }  */
 
 /*SECCION E-SHOP*/
 .e-shop {
@@ -188,7 +188,7 @@
 /*FIN SECCION E-SHOP*/
 
 
-/* Seccion - foro */
+/* SECCION  - foro */
 
 .img-foro{
     width: 100%;
