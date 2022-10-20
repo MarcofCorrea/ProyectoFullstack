@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Anzuelo</title>
+  <!-- Icono de la pestaña -->
+  <link rel="shortcut icon" href="./images/identidad/El-anzuelo-icono.png" type="image/png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Hojas de estilo -->
+  <!-- Header -->
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <!-- Footer -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <!-- propia -->
+  <link rel="stylesheet" type="text/css" href="css/shipping.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a ref="index.html" class="logo">
+      <img src="./images/identidad/El-anzuelo-logo.png" alt="logo de el anzuelo">
+    </a>
+    <div>
+      <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+      <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+
+      <a href="login-registro.html">
+        <button class="btn-more"><span>Ingresar</span></button>
+      </a>
+    </div>
+  </header>
+  <!-- NAV MENU -->
+  <nav class="menu-nav">
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="calendarios.html">CALENDARIO</a></li>
+        <li><a href="shop.html">E-SHOP</a></li>
+        <li><a href="foro.html">FORO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header ends -->
+  <!-- e-Shop - detalle de envío -->
+
+  <div class="checkout-container">
+    <div class="form col-6">
+      <div class="p-3 p-lg-5  form-container">
+        <!-- navlink -->
+        <ul class="nav nav-pills mb-3 nav-justified">
+          <li class="nav-item">
+            <a class="nav-link" href="/checkout.html"><i class="bi bi-person-circle me-2"></i>Datos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/envio.html"><i class="bi bi-box-seam me-2"></i>Envio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/payment.html"><i class="bi bi-credit-card me-2"></i>Pago</a>
+          </li>
+        </ul>
+        <!-- navlink ends -->
+        <!-- Form -->
+        <h3 class="mb-4 mt-4">Opciones de envío</h3>
+        <div class="row">
+          <div class="container col-md-12">
+            <ul>
+              <li>
+                <input type="radio" id="radio1" name="radio01">
+                <label for="radio1">Opción 1 - 5 dias</label>
+              </li>
+              <li>
+                <input type="radio" id="radio2" name="radio01" checked="checked">
+                <label for="radio2">Opción 2 - 7 días</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="./payment.html">
+          <button class="btn-cont"> Continuar
+            <div class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </button>
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- Form ends -->
+
+    <!-- Carrito -->
+    <div class="carrito-container col-5 mt-5  pt-2">
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <h5> Tu carrito</h5>
+          <div class="card shadow-0 border rounded-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="image ">
+                    <img class="w-100" src="images/identidad/El-anzuelo-logo.png">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6 ms-4">
+                  <h5>Nombre del producto</h5>
+
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>categoria 1</span>
+                    <span class="text-primary"> • </span>
+                    <span>categoria 2</span>
+                    <span class="text-primary"> • </span>
+                    <span> categoria 3<br /></span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>Cantidad</span>
+                    <span class="text-primary"> : </span>
+                    <span>1</span>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h4 class="mb-1 me-1 mt-3">$13.99</h4>
+                  </div>
+
+                </div>
+                <div class="col-md-5 col-lg-3 col-xl-2">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger btn-sm" type="button">
+                      <i class="bi bi-trash3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <div class="card shadow-0 border rounded-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="image ">
+                    <img class="w-100" src="images/identidad/El-anzuelo-logo.png">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6 ms-4">
+                  <h5>Nombre del producto</h5>
+
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>categoria 1</span>
+                    <span class="text-primary"> • </span>
+                    <span>categoria 2</span>
+                    <span class="text-primary"> • </span>
+                    <span> categoria 3<br /></span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>Cantidad</span>
+                    <span class="text-primary"> : </span>
+                    <span>1</span>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h4 class="mb-1 me-1 mt-3">$13.99</h4>
+                  </div>
+
+                </div>
+                <div class="col-md-5 col-lg-3 col-xl-2">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger btn-sm" type="button">
+                      <i class="bi bi-trash3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <div class="card shadow-0 border rounded-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="image ">
+                    <img class="w-100" src="images/identidad/El-anzuelo-logo.png">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6 ms-4">
+                  <h5>Nombre del producto</h5>
+
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>categoria 1</span>
+                    <span class="text-primary"> • </span>
+                    <span>categoria 2</span>
+                    <span class="text-primary"> • </span>
+                    <span> categoria 3<br /></span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>Cantidad</span>
+                    <span class="text-primary"> : </span>
+                    <span>1</span>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h4 class="mb-1 me-1 mt-3">$13.99</h4>
+                  </div>
+
+                </div>
+                <div class="col-md-5 col-lg-3 col-xl-2">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger btn-sm" type="button">
+                      <i class="bi bi-trash3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- e-Shop ends -->
+  <!-- Footer -->
+  <footer>
+    <div class="container__footer">
+      <div class="box__footer">
+        <div class="logo-footer">
+          <img src="images/identidad/El-anzuelo-logo.png" alt="">
+        </div>
+        <div class="subscribe-footer">
+          <div class="group-subs">
+            <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
+              autocomplete="off">
+            <input class="button--submit" value="Subscribite" type="submit">
+          </div>
+        </div>
+      </div>
+      <div class="box__footer">
+        <h2>Soluciones</h2>
+        <a href="https://www.google.com">App Desarrollo</a>
+        <a href="#">App Marketing</a>
+        <a href="#">IOS Desarrollo</a>
+        <a href="#">Android Desarrollo</a>
+      </div>
+
+      <div class="box__footer">
+        <h2>Compañia</h2>
+        <a href="#">Acerca de</a>
+        <a href="#">Trabajos</a>
+        <a href="#">Procesos</a>
+        <a href="#">Servicios</a>
+      </div>
+
+      <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+      </div>
+
+    </div>
+    <div class="box__copyright">
+      <hr>
+      <p></b>El anzuelo</p>
+    </div>
+  </footer>
+
+  <!-- Footer ends -->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
