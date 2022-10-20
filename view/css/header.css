@@ -108,6 +108,7 @@ div i {
     background-color: #4e95e7;
     list-style: none;
     text-align: center;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
 }
