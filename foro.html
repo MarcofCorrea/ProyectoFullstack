@@ -53,7 +53,7 @@
         <li><a href="index.html">HOME</a></li>
         <li><a href="calendarios.html">CALENDARIO</a></li>
         <li><a href="shop.html">E-SHOP</a></li>
-        <li><a href="#">FORO</a></li>
+        <li><a href="foro.html">FORO</a></li>
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="contacto.html">CONTACTO</a></li>
       </ul>
@@ -132,118 +132,212 @@
     <div style="margin: 50px;" class="d-flex justify-content-center">
         <table class="table table-striped">
             <thead>
-                <tr class="table-info">
-                    <th scope="col"></th>
-                    <th scope="col">Titulo</th>
-                    <th scope="col">Autor</th>
-                    <th scope="col"></th>
-                </tr>
+              <tr class="table-info">
+                <th scope="col"></th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Autor</th>
+                <th scope="col"></th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th width="50px" scope="row"><img width="30px" src="images/foro/FoodyIcons_color-01-512.webp"
-                            class="rounded-5" alt="imagen de usuario"></th>
-                    <td>
-                        <blockquote class="blockquote">
-                            <p>Pesca en san luis</p>
-                        </blockquote>
-                    </td>
-                    <td>@pescador3000</td>
-                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop">Leer</button>
-
-                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop4"
-                            aria-labelledby="offcanvasTopLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Pesca en san luis</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                el rio bla bla bla
-                            </div>
+              <tr>
+                <th width="50px" scope="row"><img width="30px" src="images/foro/pez_user2.png" class="rounded-5" alt="imagen de usuario"></th>
+                <td><blockquote class="blockquote">
+                  <p>clima rio nilo</p>
+                </blockquote></td>
+                <td>@camaroncin</td>
+                <td>
+                  <!-- Button Ver post -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                    Leer.
+                  </button>
+    
+                  <!-- Post -->
+                  <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">clima rio nilo</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th width="50px" scope="row"><img width="30px" src="images/foro/imagen user 5.jpg" class="rounded-5"
-                            alt="imagen de usuario"></th>
-                    <td>
-                        <blockquote class="blockquote">
-                            <p>Formas de hacer un bagre</p>
-                        </blockquote>
-                    </td>
-                    <td>@Masterfish69</td>
-                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">Leer</button>
-
-                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop3"
-                            aria-labelledby="offcanvasTopLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Formas de hacer un bagre</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                limon y sal parrilla
-                            </div>
+                        <!--Texto-->
+                        <div class="modal-body">
+                          ...x </br></br>Frio 
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th width="50px" scope="row"><img width="30px" src="images/foro/pez_user3.png" class="rounded-5"
-                            alt="imagen de usuario"></th>
-                    <td>
-                        <blockquote class="blockquote">
-                            <p>Mejores epocas para pescar</p>
-                        </blockquote>
-                    </td>
-                    <td>@Camaroncin</td>
-                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">Leer</button>
-
-                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2"
-                            aria-labelledby="offcanvasTopLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Mejores epocas para pescar</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                el rio bla bla bla
-                            </div>
+                        <div class="modal-body">
+                          <div>
+                          <p>Comentarios</p>
+                          </div>
+                          <table style="margin: 10px;" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">User</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                  <h2>
+                                    Mark
+                                  </h2>
+                                  <div>
+                                    Hoa
+                                  </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th width="50px" scope="row"><img width="30px" src="images/foro/pez_user2.png" class="rounded-5"
-                            alt="imagen de usuario"></th>
-                    <td>
-                        <blockquote class="blockquote">
-                            <p>Pez de 500 kg</p>
-                        </blockquote>
-                    </td>
-                    <td>@elSardina</td>
-                    <td><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">Leer</button>
-
-                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1"
-                            aria-labelledby="offcanvasTopLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasTopLabel">Pez de 500 kg</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                Alto pez
-                            </div>
+                        <!--botones-->
+                        <div class="modal-footer">
+                          <div class="form-floating">
+                            <textarea style="width: 1000px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                          </div>
+                          <button type="button" class="btn btn-secondary" >Comentar</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
                         </div>
-                    </td>
-                </tr>
-
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+                
+              <tr>
+                <th width="50px" scope="row"><img width="30px" src="images/foro/pez_user3.png" class="rounded-5" alt="imagen de usuario"></th>
+                <td><blockquote class="blockquote">
+                  <p>Pez tigre</p>
+                </blockquote></td>
+                <td>@elSardina</td>
+                <td>
+                  <!-- Button Ver post -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Leer.
+                  </button>
+    
+                  <!-- Post -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Pez tigre</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Texto-->
+                        <div class="modal-body">
+                          ...x </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>j
+                        </div>
+                        <div class="modal-body">
+                          <div>
+                          <p>Comentarios</p>
+                          </div>
+                          <table style="margin: 10px;" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">User</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                  <h2>
+                                    Mark
+                                  </h2>
+                                  <div>
+                                    Hoa
+                                  </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--botones-->
+                        <div class="modal-footer">
+                          <div class="form-floating">
+                            <textarea style="width: 1000px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                          </div>
+                          <button type="button" class="btn btn-secondary" >Comentar</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th width="50px" scope="row"><img width="30px" src="images/foro/imagen user 5.jpg" class="rounded-5" alt="imagen de usuario"></th>
+                <td><blockquote class="blockquote">
+                  <p>Lugares en san luis</p>
+                </blockquote></td>
+                <td>@pescabagre3000</td>
+                <td>
+                  <!-- Button Ver post -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Leer.
+                  </button>
+    
+                  <!-- Post -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Pesca en san luis</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Texto-->
+                        <div class="modal-body">
+                          ...x </br></br></br></br></br></br>hjhgjghjghjghjgh</br></br></br></br></br></br></br></br></br></br></br></br></br></br>j
+                        </div>
+                        <div class="modal-body">
+                          <div>
+                          <p>Comentarios</p>
+                          </div>
+                          <table style="margin: 10px;" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">User</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                  <h2>
+                                    Mark
+                                  </h2>
+                                  <div>
+                                    judfhbbhdsfiuhiaohgoiuhfdgoiuhbdofiuhgboiudfhbgoiusdfigbniubfgiudb</br>fdgbjklfnbdglkjdfklgnbd
+                                  </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--botones-->
+                        <div class="modal-footer">
+                          <div class="form-floating">
+                            <textarea style="width: 1000px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                          </div>
+                          <button type="button" class="btn btn-secondary" >Comentar</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
             </tbody>
-
-        </table>
+          </table>
     </div>
     <!--Reglas-->
     <div class="d-flex justify-content-center">
