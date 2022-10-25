@@ -19,12 +19,77 @@ class user:
     def email(self, value):
         self.__email = value
 
+    # Propiedad 3
+
+    @property
+    def password(self):
+        return self.__password
+
+    @password.setter
+    def password(self, value):
+        self.__password = value
+
     # Constructor
-    def __init__(self, x = 0, y = 0):
-        self.__x = 0
-        self.__y = 0
+    def __init__(self, idusuario = 0, email = 0, password = 0):
+        self.__idusuario = 0
+        self.__email = 0
+        self.__password = 0
 
     # Método Buy
-    def trasladar(self, dx, dy):
+    def buy(self, dx, dy):
         self.__x += dx
         self.__y += dy
+    
+    # Metodo Make Post
+    def makepost(self, dx, dy):
+        self.__x += dx
+        self.__y += dy
+    
+    # Metodo Create News
+    def createnews(self, dx, dy):
+        self.__x += dx
+        self.__y += dy
+
+# Clase Product
+class product:
+
+    # Propiedad1
+    @property
+    def product_name(self):
+        return self.__product_name
+    
+    @product_name.setter
+    def product_name(self, value):
+        self.__product_name = value
+    
+    # Propiedad2
+    @property
+    def idProduct(self):
+        return self.__idProduct
+    
+    @idProduct.setter
+    def idProduct(self, value):
+        self.__idProduct = value
+
+    # Propiedad3
+    @property
+    def product_price(self):
+        return self.__product_price
+    
+    @product_price.setter
+    def product_price(self, value):
+        self.__product_price = value
+
+    # Propiedad4
+    @property
+    def description(self):
+        return self.__description
+    
+    @description.setter
+    def description(self, value):
+        self.__description = value
+
+# Crear class y propiedades Person/Rol/Order/Post/News/Category
+# Commitear en git
+# Avisar en grupo
+# Seguir con wordpress - el anzuelo (ver requisitos de web page)
