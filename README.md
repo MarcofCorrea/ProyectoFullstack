@@ -19,7 +19,8 @@ En este repositorio se encuentra todo lo relacionado al **Frontend** y **Backend
 
 ![El_anzuelo_Entidad-relacion](https://user-images.githubusercontent.com/99567012/196561043-996df35f-eab2-40cb-8a7a-6e903adaaf35.jpeg)
 
-![DER (1)](https://user-images.githubusercontent.com/99567012/196313887-6753be9b-06be-4f64-9051-bd14bd6b9dcf.png)
+![El-anzuelo_Modelo-relacional](https://user-images.githubusercontent.com/99567012/197816227-bdaa0437-4854-40b0-a77c-a95d4a76890d.png)
+
 
 </div>
 
