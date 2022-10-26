@@ -1,4 +1,7 @@
 # Clase User
+from multiprocessing.sharedctypes import Value
+
+
 class user:
 
     # Propiedad1
@@ -89,7 +92,70 @@ class product:
     def description(self, value):
         self.__description = value
 
-# Crear class y propiedades Person/Rol/Order/Post/News/Category
-# Commitear en git
+    # Constructor
+    def __init__(self, product_name = 0, idProduct = 0, product_price = 0, description = 0):
+        self.__product_name = 0
+        self.__idProduct = 0
+        self.__product_price = 0
+        self.__description = 0
+
+# Clase Person
+class Person:
+
+    # Propiedad1
+    @property
+    def idPerson(self):
+        return self.__idPerson
+    
+    @idPerson.setter
+    def idPerson(self, value):
+        self.__idPerson = value
+    
+    # Propiedad2
+    @property
+    def name(self):
+        return self.__name
+    
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+    # Propiedad3
+    @property
+    def surname(self):
+        return self.__surname
+    
+    @surname.setter
+    def surname(self, value):
+        self.__surname = value
+
+    # Propiedad4
+    @property
+    def dateofbirth(self):
+        return self.__dateofbirth
+    
+    @dateofbirth.setter
+    def dateofbirth(self, value):
+        self.__dateofbirth = value
+    
+    # Propiedad5
+    @property
+    def adress(self):
+        self.__adress = value
+
+    @adress.setter
+    def adress(self, value):
+        self.__adress = value
+
+    # Constructor
+    def __init__(self, idPerson = 0, name = 0, surname = 0, dateofbirth = 0, adress = 0):
+        self.__idPerson = 0
+        self.__name = 0
+        self.__surname = 0
+        self.__dateofbirth = 0
+        self.__adress = 0 
+
+# Crear class y propiedades Rol/Order/Post/News/Category
+# Commitear en github
 # Avisar en grupo
 # Seguir con wordpress - el anzuelo (ver requisitos de web page)
