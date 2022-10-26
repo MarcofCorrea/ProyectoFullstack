@@ -155,7 +155,234 @@ class Person:
         self.__dateofbirth = 0
         self.__adress = 0 
 
-# Crear class y propiedades Rol/Order/Post/News/Category
-# Commitear en github
-# Avisar en grupo
-# Seguir con wordpress - el anzuelo (ver requisitos de web page)
+# Clase Rol
+class Rol:
+
+    # Propiedad1
+    @property
+    def idRol(self):
+        return self.__idRol
+    
+    @idRol.setter
+    def idRol(self, value):
+        self.__idRol = value
+    
+    # Propiedad2
+    @property
+    def rol_name(self):
+        return self.__rol_name
+    
+    @rol_name.setter
+    def rol_name(self, value):
+        self.__rol_name = value
+
+    # Constructor
+    def __init__(self, idRol = 0, rol_name = 0):
+        self.__idRol = 0
+        self.__rol_name = 0
+
+# Clase Order
+class Order:
+
+    # Propiedad1
+    @property
+    def idOrder(self):
+        return self.__idOrder
+    
+    @idOrder.setter
+    def idOrder(self, value):
+        self.__idOrder = value
+
+    # Propiedad2
+    @property
+    def shippingoption(self):
+        return self.__shippingoption
+    
+    @shippingoption.setter
+    def shippingoption(self, value):
+        self.__shippingoption = value
+
+    # Propiedad3
+    @property
+    def shippingdirection(self):
+        return self.__shippingdirection
+    
+    @shippingdirection.setter
+    def shippingdirection(self, value):
+        self.__shippingdirection = value
+
+    # Propiedad4
+    @property
+    def phone(self):
+        return self.__phone
+    
+    @phone.setter
+    def phone(self, value):
+        self.__phone = value
+
+    # Propiedad5
+    @property
+    def email(self):
+        return self.__email
+    
+    @email.setter
+    def email(self, value):
+        self.__email = value
+
+    # Propiedad6
+    @property
+    def status(self):
+        return self.__status
+    
+    @status.setter
+    def status(self, value):
+        self.__status = value
+
+    # Constructor
+    def __init__(self, idOrder = 0, shippingoption = 0, shippingdirection = 0, phone = 0, email = 0, status = 0):
+        self.__idOrder = 0
+        self.__shippingoption = 0
+        self.__shippingdirection = 0
+        self.__phone = 0
+        self.__email = 0
+        self.__status = 0
+
+    # Clase Post
+    class Post:
+
+    # Propiedad1
+    @property
+    def idPost(self):
+        return self.__idPost
+    
+    @idPost.setter
+    def idPost(self, value):
+        self.__idPost = value
+    
+    # Propiedad2
+    @property
+    def forumtitle(self):
+        return self.__forumtitle
+    
+    @forumtitle.setter
+    def forumtitle(self, value):
+        self.__forumtitle = value
+
+    # Propiedad3
+    @property
+    def forum_body(self):
+        return self.__forum_body
+    
+    @forum_body.setter
+    def forum_body(self, value):
+        self.__forum_body = value
+
+# Constructor
+    def __init__(self, idPost = 0, forumtitle = 0, forum_body = 0):
+        self.__idPost = 0
+        self.__forumtitle = 0
+        self.__forum_body = 0
+
+# Clase Category
+
+class Category:
+    
+    # Propiedad1
+    @property
+    def idCategory(self):
+        return self.__idCategory
+
+    @idCategory.setter
+    def idCategory(self, value):
+        self.__idCategory = value
+
+    # Propiedad2
+    @property
+    def name_category(self):
+        return self.__idCategory
+
+    @name_category.setter
+    def name_category(self):
+        self.__name_category = value
+
+    # Constructor
+    def __init__(self, idCategory = 0, name_category = 0):
+        self.__idCategory = 0
+        self.__name_category = 0
+
+# Clase News
+
+class News:
+
+    # Propiedad1
+    @property
+    def idNews(self):
+        return self.__idNews
+
+    @idNews.setter
+    def idNews(self, value):
+        self.__idNews = value
+
+    # Propiedad2
+    @property
+    def news_title(self):
+        return self.__news_title
+
+    @news_title.setter
+    def news_title(self, value):
+        self.__news_title = value
+
+    # Propiedad3
+    @property
+    def news_subtitle(self):
+        return self.__news_subtitle
+
+    @news_subtitle.setter
+    def news_subtitle(self, value):
+        self.__news_subtitle = value
+
+    # Propiedad4
+    @property
+    def news_image(self):
+        return self.__news_image
+
+    @news_image.setter
+    def news_image(self, value):
+        self.__news_image = value
+
+    # Propiedad5
+    @property
+    def news_foot_image(self):
+        return self.__news_image
+
+    @news_foot_image.setter
+    def news_foot_image(self, value):
+        self.__news_foot_image = value
+    
+    # Propiedad6
+    @property
+    def news_body(self):
+        return self.__news_body
+
+    @news_body.setter
+    def news_body(self, value):
+        self.__news_body = value
+
+    # Propiedad7
+    @property
+    def news_foot(self):
+        return self.__news_foot
+
+    @news_foot.setter
+    def news_foot(self, value):
+        self.__news_foot = value
+
+# Constructor
+    def __init__(self, idNews = 0, news_title = 0, news_subtitle = 0, news_image = 0, news_foot_image = 0, news_body = 0, news_foot = 0):
+        self.__idNews = 0
+        self.__news_title = 0
+        self.__news_subtitle = 0
+        self.__news_image = 0
+        self.__news_foot_image = 0
+        self.__news_body = 0
+        self.__news_foot = 0
