@@ -1,2 +1,2 @@
 # ProyectoFullstack
-Desarrollo web backend y frontend ISPC 
+Desarrollo Web Backend y Frontend ISPC 
