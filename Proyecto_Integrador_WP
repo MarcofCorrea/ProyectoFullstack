@@ -1,0 +1,96 @@
+Carrera: Tecnicatura Superior En Desarrollo Web Y Aplicaciones Digitales
+Espacio Curricular: Sistemas De Gestión De Contenidos
+Cohorte: 2022
+Profesor: Marcos Ugarte
+Profesor: Mariano Ledezma
+
+Fecha de publicación: 27/10/2022
+Fecha de Entrega:
+
+Proyecto Integrador
+Tecnología Utilizada: Wordpress
+
+Objetivo
+
+El objetivo principal del Proyecto complementa la gestión de trabajo colaborativo en entornos ágiles que se encuentran desarrollando en Proyecto Integrador I. 
+Añadiendo a su trabajo otra alternativa para presentarse individual y grupalmente usando tecnologías de CMS.
+Se destaca que lo aprendido durante la cursada del presente módulo, el uso de los recursos disponibles en la plataforma, la investigación, la creatividad 
+y el uso de los recursos de los diferentes perfiles que hay en cada grupo contribuirán a realizar con éxito la propuesta.
+
+Antes de comenzar
+
+· Leer muy bien las consignas.
+· Deberá tener instalada una versión de WordPress publicada y accesible vía Internet con el fin que pueda ser visitada y corregida por el cuerpo docente.
+
+Enunciado:
+
+Utilizando la herramienta WordPress, crear un sitio web con la presentación de su grupo como desarrolladores
+Consignas especificas
+
+1) Crear un sitio WordPress, para que lleve por título su nombre de grupo “Grupo x” y como subtítulo “Portfolio profesional”.
+
+2) Gestión de usuarios:
+● Crear un usuario del tipo “administrador” para cada integrante del grupo siguiendo el formato dado a continuación: la primera letra de su nombre y apellido completo. Por ejemplo, el usuario de Juan Perez será “jperez”.
+● Crear un usuario para el equipo docente con nombre “admin” y contraseña “1234”; (respetar las minúsculas).
+
+3) Deberá contar con un menú el cual tenga las siguientes opciones:
+
+· Inicio
+· Presentación
+· Integrantes
+· Tecnologías
+· Experiencia laboral
+· Contacto
+
+4) La opción Inicio deberá permitir volver al home del sitio en cualquier momento.
+
+5) La opción de Presentación deberá publicar las consignas de valoración del trabajo, junto con un listado de los integrantes del grupo que las aceptan. 
+Esta página será la portada de su sitio.
+
+6) La opción Integrantes desplegará un submenú con el nombre y apellido de cada integrante del grupo.
+
+● Al hacer clic en el nombre respectivo deberá de mostrar su Currículum Vitae (CV).
+● Cada CV debe estar publicado por el propietario del mismo.
+
+7) En la opción de Tecnologías debe crear una subopción por cada tecnología que conozca como grupo; 
+por ejemplo si conoce “Python, MySql y Wordpress” deberá crear una subopción para cada una.
+● Cada subopción debe constar de una página en donde explique en qué consiste y para qué sirve esa tecnología.
+
+8) En la opción Experiencia laboral deberá mostrar la categoría “Experiencia”; en la misma deberá crear, en forma de blog, al menos 3 (tres) entradas en la que comente brevemente su experiencia laboral como grupo o proyectos en los que se involucraron. 
+(Puede incluir los proyectos académicos).
+● Cada entrada deberá corresponderse con esta categoría.
+
+9) En la opción Contacto debe mostrar al menos 3 (tres) formas de contacto mediante las cuales, aquellos interesados en contratarlo, puedan hacerlo. 
+(Ej: e-mail/página web/redes sociales)
+
+10) Crear al menos una etiqueta por cada tecnología nombrada.
+
+● Luego en experiencia laboral debe de etiquetar cada entrada con al menos una de las etiquetas creadas.
+● Por ejemplo, si tiene una entrada titulada “Proyecto académico con Python”, deberá etiquetarlo con “Python”.
+
+Consideraciones:
+
+● Cada integrante se compromete a subir su tarea en forma individual para la corrección.
+● Para considerar como válida la participación de un integrante en la presentación del trabajo, se revisará su usuario y si el currículum vitae publicado con su nombre fue subido por su correspondiente propietario.
+● Todas las actividades deben cumplimentarse a término según la fecha de entrega.
+
+Criterios de evaluación del proyecto en forma grupal:
+
+· El trabajo se considerará aprobado si cumple con los puntos establecidos.
+· La fecha máxima de presentación del trabajo es el domingo 20 de noviembre de 2022 a las 22:00 hrs. por la plataforma.
+· Cada grupo debe informar la dirección del sitio y posibilitar su disponibilidad hasta el 25 de noviembre.
+
+Criterios de presentación del proyecto y aprobación en forma individual:
+
+-Creación del mismo por equipo y/o grupo de trabajo (no se aceptan trabajos
+individuales).
+Cada integrante debe subir la tarea correspondiente en forma individual.
+Cada integrante debe de tener su usuario particular y publicar su CV personalmente.
+
+En qué casos se desaprobará el trabajo
+
+· Cuando no se cumplieren los objetivos enunciados en las consignas.
+· Cuando el sitio no estuviese disponible para ser visitado y corregido por el equipo docente.
+· Cuando en la portada no se publicaren las consignas y el consentimiento del grupo en su aceptación.
+· Aunque el trabajo esté aprobado grupalmente en su presentación, se validará la participación de cada integrante y su participación en el desarrollo del mismo. Si un estudiante no suscribiera la aceptación de las condiciones, no publicase su nombre y CV como se solicitó, o el cv publicado no se correspondiese con su autoría ese alumno desaprobara, aunque el trabajo grupal estuviese aprobado.
+· Se controlará que ninguna publicación o cambio fuese realizada después de la fecha límite de presentación. En el caso de presentar un trabajo en el que se compruebe que fue desarrollado con posterioridad a esta fecha será desaprobado.
