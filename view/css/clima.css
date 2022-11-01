@@ -12,3 +12,9 @@ body {
   margin-right: .75rem;
   margin-left: .75rem;
 }
+
+
+
+.section  {
+  background-image: url("images/clima/climafondo.jpg");
+}
