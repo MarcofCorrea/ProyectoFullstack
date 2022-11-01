@@ -1,0 +1,25 @@
+
+1)      Modificar un sitio WordPress, para que lleve por título su “nombre y apellido”, y como subtitulo “Portfolio profesional”.
+
+2)      Deberá contar con un menú el cual tenga las siguientes opciones:
+
+		Inicio, Presentación, Tecnologías, Experiencia Laboral, Contacto
+
+3)      La opción Inicio deberá permitir volver al home del sitio en cualquier momento.
+
+4)      La opción de Presentación deberá contener un texto en el que usted se presente y diga porque las personas deberían contratarlo. 
+		Puede mencionar su educación y formación académica, incluir su nivel de inglés aquí, foto, etc. 
+			Esta página será la portada de su sitio.
+
+5)      En la opción de Tecnologías debe crear una subopción por cada tecnología que conozca por ejemplo si conoce “Python, MySql y Wordpress” deberá crear una subopción para cada una. 
+		Cada subopción debe constar de una página en donde explique en que consiste y para qué sirve esa tecnología.
+
+6)      En la opción Experiencia laboral deberá mostrar la categoría “experiencia”. 
+		Para lo cual deberá crear en forma de blog al menos 3 entradas en la que comente brevemente su experiencia laboral o proyectos en los que participo. 
+			Puede incluir los proyectos académicos. Cada entrada deberá corresponderse con esta categoría.
+
+7)      En contacto debe de mostrar al menos 3 formas de contactarse con usted aquellos interesados en contratarlo.
+
+8)      Crear al menos una etiqueta por cada tecnología nombrada. 
+		Luego en experiencia laboral debe de etiquetar cada entrada con al menos una de las etiquetas creadas. 
+			Por ejemplo, si tiene una entrada titulada “Proyecto académico con Python”, deberá de etiquetarlo con “Python”.
