@@ -38,7 +38,7 @@ body {
 }
 
 .btn-secondary:hover span {
-  color: rgb(000, 160, 255);
+  color: rgb(255, 255, 255);
 }
 
 .btn-secondary::before,
@@ -64,14 +64,3 @@ body {
   transform: translate3d(100%, 0, 0);
 }
 
-
-
-.section  {
-  background-image: url("images/clima/climafondo.jpg");
-}
-
-
-.collapse {
-  text-align: center;
-
-}
