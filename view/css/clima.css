@@ -13,8 +13,19 @@ body {
   margin-left: .75rem;
 }
 
+.btn-secondary{
+  background-color: #33aaff;
+  border-color: #33aaff;
+}
+
 
 
 .section  {
   background-image: url("images/clima/climafondo.jpg");
+}
+
+
+.collapse {
+  text-align: center;
+
 }
