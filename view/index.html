@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Anzuelo</title>
+  <link rel="shortcut icon" href="./images/identidad/El-anzuelo-icono.png" type="image/png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- normalize -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <!-- Estilos Header -->
+  <link rel="stylesheet" href="./css/header.css">
+  <!-- Estilos  -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Estilos Footer -->
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+
+    <img src="./images/identidad/El-anzuelo-logo.png" alt="logo de el anzuelo">
+
+    </a>
+    <div>
+      <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+      <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+
+      <a href="login-registro.html">
+        <button class="btn-more"><span>Ingresar</span></button>
+      </a>
+    </div>
+  </header>
+  <!-- NAV MENU -->
+  <nav>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="clima.html">Clima</a></li>
+        <li><a href="calendarios.html">calendario</a></li>
+        <li><a href="shop.html">e-shop</a></li>
+        <li><a href="foro.html">foro</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item home active">
+        <img src="./images/header/img11.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item home">
+        <img src="./images/header/img22.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item home">
+        <img src="./images/header/img33.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Slider ends -->
+
+
+
+  <!-- SECCION CLIMA - CALENDARIOS 
+  ================================================== -->
+
+  <div class="container clima-calendario d-flex flex-column align-items-center mt-5">
+
+    <!-- Three columns of text below the carousel -->
+
+
+    <div class="calendario__text col-md-6 mb-4">
+      <h2 class="calendario__text__title text-center">Clima y calendarios</h2>
+      <p class="calenario__text__description">Conoce más acerca de las condiciones climáticas de la zona y también enterate de las condiciones del viento,
+        la marea, las fases lunares y los proximos eventos a disputarse en las distintas localidades de pesca y mucho más info de la que creas necesitar!
+
+      </p>
+
+    </div>
+    <div class="row d-flex justify-content-between ">
+      <div class="col-lg-2 text-center">
+        <img src="images/clima/clima.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title><img src="/images/clima/clima.jpg"></title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        <h2 class="fw-normal">Clima</h2>
+          <p>Toda la información sobre el clima y condiciónes del ambiente aquí.</p>
+          <p><a class="btn btn-secondary" href="clima.html">IR &raquo;</a></p>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="images/clima/viento.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">Vientos</h2>
+          <p>Aquí encontrarás la información necesaria sobre los vientos para planear mejor tus salidas pesqueras.</p>
+          <p><a class="btn btn-secondary" href="clima.html">IR &raquo;</a></p>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="images/clima/marea.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">Marea</h2>
+          <p>Entérate como esta la condición de la marea sobre la costa.</p>
+          <p><a class="btn btn-secondary" href="clima.html">IR &raquo;</a></p>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="images/clima/luna.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">Luna</h2>
+          <p>Dicen que conocer las fases lunares es una ventaja a la hora de practicar este deporte, aprende más aquí.</p>
+          <p><a class="btn btn-secondary" href="clima.html">IR &raquo;</a></p>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="images/clima/apertura-pesca.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">Apertura Pesca</h2>
+          <p>Conoce más sobre torneos, eventos pasados y futuros, y más curiosidades aquí.</p>
+          <p><a class="btn btn-secondary" href="calendarios.html">IR &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+  <!-- SECCION NEWSLETTER 
+  ================================================== -->
+
+  <div class="col-md-6  rounded  container text-center bg-info p-5 mt-4 ml-10 mr-10">
+    <h3 class="headline back text-white">REGISTRATE A NUESTRO NEWSLETTER</h3>
+    <form class="main-form " method="post" action="./">
+      <input id="email" class="width" name="email" type="text" placeholder="Introduzca su e-mail" />
+      <button type="button" class="btn btn-news btn-outline-secondary btn-lg">REGISTRARSE</button>
+    </form>
+  </div>
+
+
+  <!-- SECCIÓN E-SHOP 
+==================================================================== -->
+
+<section class="e-shop">
+  <div class="e-shop-container">
+    <!-- Texto -->
+    <div class="e-shop__text col-md-6">
+      <h2 class="e-shop__text__title">E-shop</h2>
+      <p class="e-shop__text__description">Un sitio dedicado al asesoramiento para el pescador deportivo, cañas, reeles, artificiales, accesorios. Bait Cast y Spinning. Marines Sports, Daiwa y las mejores marcas para los mas exigentes.</p>
+    </div>
+
+    <!-- slide -->
+    <div id="myCarousel" class="carousel slide slide-shop" data-bs-ride="carousel">
+      <!-- carousel -->
+      <div class="carousel-inner w-100">
+        <!-- item 1 -->
+        <div class="carousel-item carousel-item-shop  active">
+          <div class="col-7 container-card">
+            <div class="card text-bg-dark ">
+              <img src="images/shop/home/slide-1.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay ">
+                <h5 class="card-title text-center text-white text-bold">Pesca Deportiva</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item 1 -->
+        <!-- item 2 -->
+        <div class="carousel-item carousel-item-shop ">
+          <div class="col-7  container-card">
+            <div class="card text-bg-dark text-center text-white text-bold">
+              <img src="images/shop/home/slide-2.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center text-white text-bold">Cañas</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item 2 -->
+        <!-- item 3-->
+        <div class="carousel-item carousel-item-shop">
+          <div class="col-7  container-card">
+            <div class="card text-bg-dark">
+              <img src="images/shop/home/slide-3.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center text-white text-bold">Anzuelos</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item 3-->
+        <!-- item 4 -->
+        <div class="carousel-item carousel-item-shop">
+          <div class="col-7  container-card">
+            <div class="card text-bg-dark">
+              <img src="images/shop/home/slide-4.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center text-white text-bold">Reeles</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item 4 -->
+        <!-- item 5 -->
+        <div class="carousel-item  carousel-item-shop">
+          <div class="col-7  container-card">
+            <div class="card text-bg-dark">
+              <img src="images/shop/home/slide-5.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center text-white text-bold">Accesorios</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /item 5 -->
+        <!-- item 6 -->
+        <div class="carousel-item carousel-item-shop">
+          <div class="col-7  container-card">
+            <div class="card text-bg-dark">
+              <img src="images/shop/home/slide-6.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center text-white text-bold">Cajas</h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- item 6 -->
+      </div>
+      <!-- /carousel -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <i class="bi bi-arrow-left-short"></i>
+        </button>
+        <button class="carousel-control-next next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <i class="bi bi-arrow-right-short"></i>
+        </button>
+        <!-- /Controls -->
+      </div>
+
+
+      <!-- Botón Ver más -->
+      <a href="shop.html">
+        <button class="btn-more"><span>Ver más</span></button>
+      </a>
+      <!-- /Botón Ver más -->
+    </div>
+
+
+
+
+  </section>
+
+
+
+  <!-- SECCIÓN FORO
+==================================================================== -->
+
+  <div class="container-foro">
+    <div class="foro-item">
+
+      <h3 class="foro-title-sup">FORO INTERACTIVO</h3>
+
+      <h2 class="foro-title-inf">¡PESCA LAS RESPUESTAS DE TUS DUDAS Y AYUDA A LOS OTROS CON LAS SUYAS!</h2>
+      <p class="foro-description">Aqui podras ver las consultas realizadas por los usuarios, crear nuevos temas de
+        conversacion y sacarte tus dudas. </p>
+      <br>
+      <!-- Botón Ver más -->
+      <a href="foro.html">
+        <button class="btn-more"><span>Ver más</span></button>
+      </a>
+      <!-- /Botón Ver más -->
+    </div>
+    <div class="foro-item">
+
+      <img src="images/foro/HOME_foro.png" class="img-foro" alt="foro" tittle="FORO">
+
+    </div>
+  </div>
+
+  <!-- SECCIÓN BLOG
+==================================================================== -->
+
+  <section class="container ">
+    <div class="row">
+
+      <div class="container text-left ">
+
+        <div class="col py-2">
+
+          <h4>TU SECCION DE NOTICIAS</h4>
+
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-6 col-sm-6 col-xs-12 py-3 m-l 11 ">
+        <figure>
+          <img alt="Silverfox" class="img-fluid rounded d-block m-l-none " src="./images/blog/tiburon.jpg">
+        </figure>
+        <h4 class="title4-long-responsive-section izq blue font-bold text-uppercase"> Mirá el tiburón de especie
+          desconocida que pescaron en Australia</h4>
+        <p>El extraño e intimidante pez que fue atrapado en las profundidades del mar que rodea a ese país de Oceanía
+          provocó un gran desconcierto entre los expertos debido a sus particulares características. </p>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-3 m-r 11 ">
+        <figure>
+          <img alt="Silverfox" class="img-fluid rounded  " src="./images/blog/pez.jpg">
+        </figure>
+        <h5 class="title4-long-responsive-section izq blue font-bold text-uppercase">Relatos a cielo abierto: Volver al
+          origen</h5>
+        <p>Un texto de Daniel Vadillo enumera los pasos que sigue un pescador novel, y de corta edad. </p>
+
+        <figure>
+          <img class="img-fluid rounded d-block m-l-none " alt="Slogan" src="./images/blog/0921nino-1424210.jpg">
+
+        </figure>
+        <h5 class="title4-long-responsive-section izq blue font-bold text-uppercase">Las tarariras ya pican en Entre
+          Ríos</h5>
+        <p>En septiembre se abre la temporada de hoplias malabaricus, tal el nombre científico de una de las especies
+          preferidas por los pescadores deportivos.</p>
+      </div>
+
+
+      <div class="container text-center py-0">
+        <div class="row">
+          <!-- Botón Ver más -->
+          <a href="./blog.html">
+            <button class="btn-more"><span>Más novedades</span></button>
+          </a>
+          <!-- /Botón Ver más -->
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container__footer">
+      <div class="box__footer">
+        <div class="logo-footer">
+          <img src="images/identidad/El-anzuelo-logo.png" alt="">
+        </div>
+        <div class="subscribe-footer">
+          <div class="group-subs">
+            <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
+              autocomplete="off">
+            <input class="button--submit" value="Subscribite" type="submit">
+          </div>
+        </div>
+      </div>
+      <div class="box__footer">
+        <h2>Soluciones</h2>
+        <a href="https://www.google.com">App Desarrollo</a>
+        <a href="#">App Marketing</a>
+        <a href="#">IOS Desarrollo</a>
+        <a href="#">Android Desarrollo</a>
+      </div>
+
+      <div class="box__footer">
+        <h2>Compañia</h2>
+        <a href="#">Acerca de</a>
+        <a href="#">Trabajos</a>
+        <a href="#">Procesos</a>
+        <a href="#">Servicios</a>
+      </div>
+
+      <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+      </div>
+
+    </div>
+    <div class="box__copyright">
+      <hr>
+      <p></b>El anzuelo</p>
+    </div>
+  </footer>
+
+
+
+
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

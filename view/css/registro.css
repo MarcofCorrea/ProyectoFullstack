@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #fff;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    overflow: hidden;
+  }
+  
+  .container-login {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  }
+  
+  a {
+    cursor: pointer;
+    transition: all 200ms linear;
+  
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .link {
+    color: #88888a;
+  }
+  
+  .link:hover {
+    color: #0075ff;
+  }
+  
+  h4 {
+    font-weight: 600;
+    color: #0075ff;
+  }
+  
+  h6 span {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .section {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+  
+  .full-height {
+    min-height: 80vh;
+  }
+  
+  
+  .card-3d-wrap {
+    position: relative;
+    width: 440px;
+    max-width: 100%;
+    height: 400px;
+    margin-top: 60px;
+  }
+  
+  .card-3d-wrapper {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .card-front{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;;
+    background-color: #ffffff;
+    background-image: url('../images/login-back.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    position: absolute;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+  }
+  
+  .center-wrap {
+    position: absolute;
+    width: 100%;
+    padding:0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -45%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+  }
+  
+  .form-group {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-style {
+    padding: 13px 20px;
+    padding-left: 55px;
+    height: 48px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #020611;
+    background-color: #ffffff;
+    border: none;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+  }
+  
+  .form-style:focus,
+  .form-style:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    color: #0075ff;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input:-ms-input-placeholder {
+    color: #646466;
+    opacity: 0.7;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input::-moz-placeholder {
+    color: #646466;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input:-moz-placeholder {
+    color: #646466;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input::-webkit-input-placeholder {
+    color: #646466;
+    opacity: 0.7;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input:focus:-ms-input-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input:focus::-moz-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input:focus:-moz-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .form-group input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  
+  .btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: .5rem 1.4rem;
+    margin: 10px 0 0 0;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    font-size: .75rem;
+    text-transform: uppercase;
+    border-radius: 500px;
+    overflow: hidden;
+    background-color:#102770 ;
+    color: #fff;
+   }
+   
+  .btn span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.6s;
+   }
+   
+  .btn:hover span {
+    color: #102770;
+   }
+   
+  .btn::before, .btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+  
+  .btn::before {
+    content: "";
+    background:#0075ff ;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+  .btn:hover::before {
+    transform: translate3d(100%, 0, 0);
+   } 
+  .btn:hover{
+    background-color: #96bdd1;
+  }
+  
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    display: block;
+    z-index: 100;
+    filter: invert();
+  }
+  
+  .logo img {
+    height: 100px;
+    width: auto;
+    display: block;
+  }
+  
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 250px;
+  }
+  
+  
+  /* Animation */
+  
+  .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  
+  .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  
+  .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  
+  .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  
+  .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .waves {
+      height: auto;
+      min-height: 250px;
+    }
+  }

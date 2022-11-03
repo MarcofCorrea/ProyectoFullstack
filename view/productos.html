@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Anzuelo</title>
+    <link rel="shortcut icon" href="./images/identidad/El-anzuelo-icono.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- normalize -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Estilos Header -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- Estilos  -->
+    <link rel="stylesheet" type="text/css" href="css/productos.css">
+    <!-- Estilos Footer -->
+    <link rel="stylesheet" href="./css/footer.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+
+            <img src="./images/identidad/El-anzuelo-logo.png" alt="logo de el anzuelo">
+
+        </a>
+        <div>
+            <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
+            <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+
+            <a href="login-registro.html">
+                <button class="btn-more"><span>Ingresar</span></button>
+            </a>
+        </div>
+    </header>
+    <!-- NAV MENU -->
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="clima.html">clima</a></li>
+                <li><a href="calendarios.html">calendario</a></li>
+                <li><a href="shop.html">e-shop</a></li>
+                <li><a href="foro.html">foro</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <div class="container-shop d-flex justify-content-evenly">
+        <div class="col-2 ps-4">
+
+            <!-- Sidebar -->
+            <div class="col-12">
+
+                <div>
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Categoria -->
+                        <div class=" row col-md-6 col-lg-12 mb-5">
+                            <h5 class="font-weight-bold dark-grey-text mb-2"><strong>Categorias</strong></h5>
+
+                            <!--Radio group-cat-->
+                            <div class="form-group ">
+                                <input class="form-check-input" name="group" type="radio" id="radio-all">
+                                <label for="radio-all" class="form-check-label dark-grey-text" checked>Todos</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-accesorios"
+                                    checked="">
+                                <label for="radio-accesorios" class="form-check-label dark-grey-text">Accesorios</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-camping">
+                                <label for="radio-camping" class="form-check-label dark-grey-text">Camping</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-canias">
+                                <label for="radio-canias" class="form-check-label dark-grey-text">Cañas</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-canias">
+                                <label for="radio-canias" class="form-check-label dark-grey-text">Reeles</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-canias">
+                                <label for="radio-canias" class="form-check-label dark-grey-text">Señuelos</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-combo">
+                                <label for="radio-combo" class="form-check-label dark-grey-text">Combos y
+                                    Ofertas</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-indumentaria">
+                                <label for="radio-indumentaria"
+                                    class="form-check-label dark-grey-text">Indumentaria</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" name="group" type="radio" id="radio-filamento">
+                                <label for="radio-filamento" class="form-check-label dark-grey-text">Nylon,
+                                    Multifilamentos,
+                                    Fluoroca</label>
+                            </div>
+                            <!--Radio group-->
+                        </div>
+                        <!-- /Categoria-->
+                    </div>
+                    <!-- /Grid row -->
+
+                </div>
+                <!-- /Grid row -->
+            </div>
+
+        </div>
+        <!-- /.Sidebar -->
+
+        <!-- Content -->
+
+
+        <!-- Products Grid -->
+        <section class=" col-9">
+
+            <!-- Grid row -->
+            <div class="row-grid d-flex justify-content-evenly">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-3">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-1.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Salidas
+                                        Conicas 10
+                                        Unid
+                                        Z-eeg Fishing Fluo</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Nylon, Multifilamentos, Fluoroca</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class=" mb-0">
+                                    <span class="float-left"><strong>$5.048</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-2.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Caja
+                                        Organizadora
+                                        Señuelos
+                                        Anzuelos Etc Mauri Nro 25</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Accesorios</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class=" mb-0">
+                                    <span class="float-left"><strong>$2.259</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-3.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html"
+                                        class="dark-grey-text">Intercambiador
+                                        Señuelos
+                                        Z-eeg Quick Snap N°2 Bister 10 Unid</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Accesorios</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$3.048</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+            <!-- Grid row -->
+            <div class="row d-flex justify-content-evenly">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-4.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Reel
+                                        rotativo Marine
+                                        Sports Caster Power Plus 400 derecho color negro</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Reeles</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$40.217</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-5.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Reel
+                                        frontal Marine
+                                        Sports Arena 4000 FD derecho/izquierdo color plateado</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Reeles</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$15.048</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-6.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Caña Para
+                                        Reel
+                                        Rotativo Marine Sports Laguna 20-40 Lbs</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Cañas</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$13.538</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+            <!-- Grid row -->
+            <div class="row d-flex justify-content-evenly">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-7.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Wader
+                                        Pesca</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Indumentaria</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$23.194</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-8.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Gorro
+                                        Sombrero Para
+                                        Pesca De Ala Waterdog</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Indumentaria</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$6.988</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-ecommerce">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="images/shop/productos/producto-productos-9.webp" class="img-fluid" alt="">
+                        </div>
+                        <!--Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Category & Title-->
+
+                            <h5 class="card-title mb-1"><strong><a href="product.html" class="dark-grey-text">Botas De
+                                        Neoprene Dago
+                                        Pesca Kayac Nautica</a></strong>
+                            </h5><span class="badge badge-danger mb-2">Indumentaria</span>
+
+                            <!--Card footer-->
+                            <div class="card-footer pb-0">
+                                <div class="mb-0">
+                                    <span class="float-left"><strong>$25.206</strong></span>
+                                    <span class="float-right">
+                                        <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Add to Cart"><i
+                                                class="fas fa-shopping-cart ml-3"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Card content-->
+
+                    </div>
+                    <!--Card-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!-- /.Products Grid -->
+
+    </div>
+    <!-- /.Content -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo-footer">
+                    <img src="images/identidad/El-anzuelo-logo.png" alt="">
+                </div>
+                <div class="subscribe-footer">
+                    <div class="group-subs">
+                        <input type="email" class="input subscribe-footer__input" id="Email" name="Email"
+                            placeholder="Email" autocomplete="off">
+                        <input class="button--submit" value="Subscribite" type="submit">
+                    </div>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="https://www.google.com">App Desarrollo</a>
+                <a href="#">App Marketing</a>
+                <a href="#">IOS Desarrollo</a>
+                <a href="#">Android Desarrollo</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+        <div class="box__copyright">
+            <hr>
+            <p></b>El anzuelo</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
