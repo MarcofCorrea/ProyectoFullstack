@@ -261,7 +261,7 @@ h6 span {
 }
 
 .logo img {
-  height: 110px;
+  height: 9rem;
   width: auto;
   display: block;
 }
@@ -319,15 +319,15 @@ h6 span {
   .logo {
     position: absolute;
     top: 10px;
-    left: 25%;    
+    left: 15%;    
     display: block;
     z-index: 100;
     filter: invert();
   }
   
   .logo img {
-    min-height: 50px;
-    max-height: 80px;
+    min-height: 4rem;
+    max-height: 6rem;
     width: auto;
     display: block;
   }
@@ -356,18 +356,18 @@ h6 span {
   .logo {
     position: absolute;
     top: 5px;
-    left: 30%;    
+    left: 25%;    
     display: block;
     z-index: 100;
     filter: invert();
   }
   
-  .logo img {
+  /* .logo img {
     min-height: 50px;
     max-height: 100px;
     width: auto;
     display: block;
-  }
+  } */
 
   .center-wrap {
     position: absolute;
