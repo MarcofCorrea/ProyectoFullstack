@@ -24,12 +24,14 @@
 
     <div class="container-login">
         <!-- Logo -->
-        <a href="index.html" class="logo" target="_blank">
-            <img src="./images/identidad/El-anzuelo-logo.png" alt="logo el anzuelo">
-        </a>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="./images/identidad/El-anzuelo-logo.png" alt="logo el anzuelo">
+            </a>
+        </header>
 
         <!-- Form -->
-        <div class="section">
+        <section class="section">
             <div class="container">
                 <div class="row full-height justify-content-center">
                     <div class="col-12 text-center align-self-center py-3">
@@ -38,32 +40,32 @@
                                 <div class="card-3d-wrapper">
                                     <div class="card-front">
                                         <div class="center-wrap pt-3 pb-3">
-                                            <div class="section text-center">
+                                            <form class="section text-center">
                                                 <h4 class="mb-4 pb-3">Resgistrarse</h4>
                                                 <div class="form-group">
-                                                    <input type="text" name="sign-name" class="form-style"
-                                                        placeholder="Nombre" id="sign-name" required>
+                                                    <input type="text" name="sign-name" class="form-style form-check-input"
+                                                        placeholder="Nombre" id="sign-name" minlength="3" maxlength="60" required>
                                                     <i class="input-icon bi-person-circle"></i>
                                                 </div>
                                                 <div class="form-group mt-2">
                                                     <input type="text" name="sign-apellido" class="form-style" placeholder="Apellido" id="sign-apellido"
-                                                        required>
+                                                    minlength="3" maxlength="60"  required>
                                                     <i class="input-icon bi-person-circle"></i>
                                                 </div>
                                                 <div class="form-group mt-2">
-                                                    <input type="email" name="sign-mail" class="form-style" placeholder="Email" id="sign-mail" required>
+                                                    <input type="email" name="sign-mail" class="form-style" placeholder="Email" id="sign-mail" minlength="10" maxlength="60" required>
                                                     <i class="input-icon bi-envelope"></i>
                                                 </div>
                                                 <div class="form-group mt-2">
                                                     <input type="password" name="sign-pass" class="form-style" placeholder="Contraseña" id="sign-pass"
-                                                        autocomplete="off" required>
+                                                        autocomplete="off" minlength="8" maxlength="12" required>
                                                     <i class="input-icon bi bi-key"></i>
                                                 </div>
                                                 <a href="login-registro.html">
-                                                    <button class="mt-4 btn"><span>Registrarse</span></button> </a>
+                                                    <button class="mt-4 btn" type="submit"><span>Registrarse</span></button> </a>
                                                 <p class="mb-0 mt-4 text-center"><a href="./login-registro.html"
                                                         class="link">Iniciar sesion</a></p>
-                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +74,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <!--Waves Container-->
 
