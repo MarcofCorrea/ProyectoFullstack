@@ -7,3 +7,5 @@ para poder verlo:
 3- Click derecho en Index.html y darle click a Open with live server. 
 
 
+<im![Captura de pantalla (102)](https://user-images.githubusercontent.com/101483356/200140791-a0d1e192-c18c-4175-acee-79e1cf879a4f.png)
+g>
