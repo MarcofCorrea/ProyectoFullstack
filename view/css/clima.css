@@ -1,66 +1,15 @@
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-  align-items: center ;
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: #4e95e7;
+  margin-bottom: -15px;
 }
-.clima .col-lg-2 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+section img,a{
+  display: flex;
+  justify-content: center;
 }
-.clima .col-lg-2 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+.widgets {
+  display: flex;
+  justify-content: center;
+  background-image: url("/images/clima/climafondo.jpg");
 }
-
-.btn-secondary{
-  outline: none;
-    cursor: pointer;
-    border: 1px solid #0075ff;
-    padding: 0.5rem 1.4rem;
-    margin: 10px 0 0 0;
-    font-size: inherit;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: .93rem;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #0075ff;
-    color: #0075ff;
-}
-
-.btn-secondary span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
-}
-
-.btn-secondary:hover span {
-  color: rgb(255, 255, 255);
-}
-
-.btn-secondary::before,
-.btn-secondary::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.btn-secondary::before {
-  content: "";
-  background: #fff;
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-
-.btn-secondary:hover::before {
-  transform: translate3d(100%, 0, 0);
-}
-
