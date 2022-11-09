@@ -26,8 +26,8 @@
     <!-- Estilos Footer -->
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/clima.css">
-    </head>
-    <body>
+</head>
+<body>
     <!-- Header -->
     <header>
         <a href="index.html" class="logo">
@@ -55,103 +55,170 @@
         </ul>
         </div>
     </nav>
+    <div class="widgets" style="display: flex; align-content: center; padding-right: 65px;">
+        <!--Widget de Temperatura-->
+        <div id="ww_8f4cc25f54a43" v='1.3' loc='auto' a='{"t":"horizontal","lang":"es","ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://sharpweather.com/es/widgets/" id="ww_8f4cc25f54a43_u" target="_blank">Widget de tiempo para el sitio web</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_8f4cc25f54a43"></script>
+        <!--Widget de la luna-->
+        <div id="contain_moon" style="display: block; padding-left: 35px; text-align:center;padding-top:5px;padding-bottom:5px;">
+            <div style="font-weight:bold">La Luna hoy</div>
+                <div loc='auto' style="margin-top:7px;margin-bottom:15px;filter:drop-shadow(0 0 30px hsl(220,100%,15%))">
+                </div>
+                <div>
+                    .
+                </div>
+                <div style="font-size:small">
+                    Aquí
+                </div>
+            </div>
+        <script>
+            (function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=es&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(245,245,245)&shadeColor=rgb(17,17,17)&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="Próxima luna llena<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()
+        </script>
+    </div>
     
-<!--------------------------MI Seccion del CLIMA---------------------------->
+<!-- SECCION CLIMA - CALENDARIOS ================================-->
+    <!--Collapse temperatura-->
     <section>
-        <div class="container clima-calendario d-flex flex-column align-items-center mt-5">
-
-    <!-- Three columns of text below the carousel -->
-            <div class="calendario__text col-md-6 mb-4">
-                <h2 class="calendario__text__title text-center">Clima y calendarios</h2>
-                <p class="calenario__text__description">Conoce más acerca de las condiciones climáticas de la zona y también enterate de las condiciones del viento,
-                    la marea, las fases lunares y los proximos eventos a disputarse en las distintas localidades de pesca y mucho más info de la que creas necesitar!
-                </p>
-
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTemperatura" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Temperatura
+            </a>    
+        </p>
+        <div class="collapse" id="collapseTemperatura">
+            <div class="card card-body">
+                <div id="TTPW_gsYL">El tiempo - Tutiempo.net</div>
+            <script type="text/javascript">
+            function IniciarCargaTiempoIP()
+            {
+            var ScriptOriginal = "https://www.tutiempo.net/s-widget/pw/fgsYL/C10/";
+            var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function()
+                {
+                    if(this.readyState == 4 && this.status == 200)
+                    {
+                    var data = JSON.parse(this.responseText);
+                    var res = data.loc.split(",");
+                    var imported = document.createElement('script');
+                    if(res[0] && res[1]){imported.src = ScriptOriginal+res[0]+','+res[1];}
+                    else{imported.src = ScriptOriginal;}
+                    document.head.appendChild(imported);
+                    }
+                };
+            xhttp.open("GET","https://ipinfo.io/json",true);
+            xhttp.send();
+            }
+            IniciarCargaTiempoIP();
+            </script>
             </div>
-        </div>
-        <div class="row d-flex justify-content-between ">
-            <div class="col-lg-2 text-center">
-                <img src="images/clima/clima.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title><img src="/images/clima/clima.jpg"></title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
-                <h2 class="fw-normal">Clima</h2>
-                <p>Toda la información sobre el clima y condiciónes del ambiente aquí.</p>
-                <p><a class="btn btn-secondary" href="clima-temperatura.html">IR &raquo;</a></p>
-            </div>
-            <div class="col-lg-2 text-center">
-                <img src="images/clima/viento.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
-                <h2 class="fw-normal">Vientos</h2>
-                <p>Aquí encontrarás la información necesaria sobre los vientos para planear mejor tus salidas pesqueras.</p>
-                <p><a class="btn btn-secondary" href="clima-viento.html">IR &raquo;</a></p>
-            </div>
-            <div class="col-lg-2 text-center">
-                <img src="images/clima/marea.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
-                <h2 class="fw-normal">Marea</h2>
-                <p>Entérate como esta la condición de la marea sobre la costa.</p>
-                <p><a class="btn btn-secondary" href="clima-marea.html">IR &raquo;</a></p>
-            </div>
-            <div class="col-lg-2 text-center">
-                <img src="images/clima/luna.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
-                <h2 class="fw-normal">Luna</h2>
-                <p>Dicen que conocer las fases lunares es una ventaja a la hora de practicar este deporte, aprende más aquí.</p>
-                <p><a class="btn btn-secondary" href="clima-luna.html">IR &raquo;</a></p>
-            </div>
-            <div class="col-lg-2 text-center">
-                <img src="images/clima/apertura-pesca.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
-                <h2 class="fw-normal">Apertura Pesca</h2>
-                <p>Conoce más sobre torneos, eventos pasados y futuros, y más curiosidades aquí.</p>
-                <p><a class="btn btn-secondary" href="calendarios.html">IR &raquo;</a></p>
-            </div>
-        </div>
-        <div class="conteiner_clima">    
-            <p>Pagina windguru sobre vientos, y enlace a explicación sobre como interpretarlo</p>
-            <a target="_blank" href="https://www.windguru.cz">WINDGURU</a>
-            <br>
-            <a target="_blank" href="https://xsurf.es/como-interpretar-windguru/">
-                Aprender a interpretar WINDGURU
-            </a>
+            <iframe class="mapa-climatico" style="width: 100%; height: 500px;" src="https://mapa.tutiempo.net/#-37.19533;-60.83679;7">
+                MAPAClima
+            </iframe>
         </div>
     </section>
+    <!--Collapse viento-->
+    <section>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseViento" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Viento
+            </a>    
+        </p>
+        <div class="collapse show" id="collapseViento">
+            <div class="card card-body">
+                <section style="background-color: #aaaabb">
+                    <p>Haz click en la imagen para acceder al "Mapa de vientos" y a Windguru</p>
+                    <a target="_blank" href="https://www.windguru.cz">
+                        <img src="./images/clima/mapa-viento.png" alt="mapa de marea" style="width: 100%; max-width: 850px ;">
+                    </a>
+                    <br>
+                    <h1>XSURF- Aprende a interpretar Windguru</h1>
+                    <p>Pagina enlace a explicación sobre como interpretar las estadisticas y nomenclaturas</p>
+                    <iframe src="https://xsurf.es/como-interpretar-windguru/" alt="" style="width: 100%; min-height: 500px; border: 1px #4e95e7 solid;">
+                        INSERCION DE PAGINA "XSURF"
+                    </iframe>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!--Collapse marea-->
+    <section>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseMarea" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Marea
+            </a>    
+        </p>
+        <div class="collapse" id="collapseMarea">
+            <div class="card card-body">
+                <section>
+                    <p>
+                        Abra la imagen para acceder al mapa de mareas.
+                    </p>
+                    <br>
+                    <a target="_blank" href="https://www.windguru.cz/map/tide/?lat=-37.7139996440031&lon=-59.89369535399976&zoom=5.023262737331681">
+                        <img src="images/clima/mapa-marea.png" alt="mapa de marea" style="width: 100%; max-width: 850px ;">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!--Collapse Luna-->
+    <section>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseLuna" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Calendario Lunar
+            </a>   
+        </p>
+        <div class="collapse" id="collapseLuna">
+            <div class="card card-body">
+                <section>
+                    <p>Información de las fases lunares del mes</p>
+                    <div>
+                        <iframe src="https://www.tutiempo.net/s-widget/moon/000000l1s/" scrolling="no" frameborder="0" style="display:flex; width :100%; height:830px;"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>    
+    </section>
+<!--Footer-->
     <footer>
         <div class="container__footer">
             <div class="box__footer">
                 <div class="logo-footer">
                     <img src="images/identidad/El-anzuelo-logo.png" alt="">
                 </div>
-                <div class="subscribe-footer">
-                    <div class="group-subs">
-                        <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
-                        autocomplete="off">
-                        <input class="button--submit" value="Subscribite" type="submit">
-                    </div>
+            <div class="subscribe-footer">
+                <div class="group-subs">
+                    <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
+                    autocomplete="off">
+                    <input class="button--submit" value="Subscribite" type="submit">
                 </div>
             </div>
-            <div class="box__footer">
-                <h2>Soluciones</h2>
-                <a href="https://www.google.com">App Desarrollo</a>
-                <a href="#">App Marketing</a>
-                <a href="#">IOS Desarrollo</a>
-                <a href="#">Android Desarrollo</a>
-            </div>
-            <div class="box__footer">
-                <h2>Compañia</h2>
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Procesos</a>
-                <a href="#">Servicios</a>
-            </div>
-            <div class="box__footer">
-                <h2>Redes Sociales</h2>
-                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-            </div>
+        </div>
+        <div class="box__footer">
+            <h2>Soluciones</h2>
+            <a href="https://www.google.com">App Desarrollo</a>
+            <a href="#">App Marketing</a>
+            <a href="#">IOS Desarrollo</a>
+            <a href="#">Android Desarrollo</a>
+        </div>
+        <div class="box__footer">
+            <h2>Compañia</h2>
+            <a href="#">Acerca de</a>
+            <a href="#">Trabajos</a>
+            <a href="#">Procesos</a>
+            <a href="#">Servicios</a>
+        </div>
+        <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
         </div>
         <div class="box__copyright">
-            <hr>
-            <p></b>El anzuelo</p>
+        <hr>
+        <p></b>El anzuelo</p>
         </div>
     </footer>
-    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
