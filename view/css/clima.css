@@ -11,5 +11,5 @@ section img,a{
 .widgets {
   display: flex;
   justify-content: center;
-  background-image: url("/images/clima/climafondo.jpg");
+  background-image: url("../images/clima/climafondo.jpg");
 }
