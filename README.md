@@ -1,8 +1,10 @@
 # 💻 El anzuelo - Tu sitio de Pesca
 
-En este repositorio se encuentra todo lo relacionado al **Frontend** y **Backend** del proyecto realizado como parte del cursado de la **[Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales](https://ispc.prod.tucampus.org/tecnicatura-web/)**  del ISPC. Para más información relacionada al proyecto , invitamos a recorrer la [Wiki](https://github.com/MarcofCorrea/ProyectoFullstack/wiki)
-En la rama main se encuentra la versión funcional en línea 
-En la rama dev se encuentran modificaciones que estána  prueba o modificaciones
+En este repositorio se encuentra todo lo relacionado al **Frontend** y **Backend** del proyecto realizado como parte del cursado de la **[Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales](https://ispc.prod.tucampus.org/tecnicatura-web/)**  del ISPC. Para más información relacionada al proyecto , invitamos a recorrer la [Wiki](https://github.com/MarcofCorrea/ProyectoFullstack/wiki).
+
+En la rama main se encuentra la versión funcional en línea.
+
+En la rama dev se encuentran modificaciones que estána  prueba o modificaciones.
 
 ## 📝 Descripción
 
