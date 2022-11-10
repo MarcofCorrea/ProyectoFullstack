@@ -39,20 +39,22 @@
                   <div class="card-front">
                     <div class="center-wrap">
 
-                      <form class="section text-center needs-validation" novalidate>
+                      <form id="loginForm" class="section text-center needs-validation" novalidate
+                        onsubmit="onEnviar()">
                         <h4 class="mb-4 pb-3">Inicio de sesion</h4>
                         <div class="form-group has-validation">
-                          <input type="email" name="logemail" id="validationCustom01" class="form-style form-check-input form-control"
-                            placeholder="Email" id="logemail" minlength="14" maxlength="30" required>
+                          <input type="email" name="logemail" id="email"
+                            class="form-style form-check-input form-control" placeholder="Email" id="logemail"
+                            minlength="14" maxlength="30" required>
                           <i class="input-icon bi bi-person-circle"></i>
                         </div>
                         <div class="form-group mt-2 has-validation">
-                          <input type="password" name="logpass" class="form-style form-check-input form-control" placeholder="Contraseña" id="validationCustom02"
-                            minlength="8" maxlength="12" required>
+                          <input type="password" name="logpass" class="form-style form-check-input form-control"
+                            placeholder="Contraseña" id="password" minlength="8" maxlength="12" required>
                           <i class="input-icon bi bi-key"></i>
                         </div>
-                        <a href="../index.html"
-><button class="btn mt-4" type="submit"><span>Ingresar</span></button></a>
+                        <a href="../index.html"><button class="btn mt-4"
+                            type="submit"><span>Ingresar</span></button></a>
                         <p class="mb-0 mt-4 text-center"><a href="./reset-password.html" class="link">¿Olvidaste tu
                             constraseña?</a></p>
                         <p class="mb-0 mt-0 text-center"><a href="./registro.html" class="link">Registrate</a></p>
@@ -113,6 +115,7 @@
       })
     })()
   </script>
+  <script src="./js/formulario-login.js"></script>
 </body>
 
 </html>
