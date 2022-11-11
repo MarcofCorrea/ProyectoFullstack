@@ -1,4 +1,4 @@
-body{
+/*body{
     font-family: sans-serif;
     margin: 0;
 }
@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 
-header {
+/*header {
 
     display: flex;
     height: 80px;
@@ -16,8 +16,8 @@ header {
     align-items: center;
     padding: 50px;
 
-}
-
+}*/
+/*
 .logo {
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ div i{
     padding-right: 50px;
 }
 
-
+/*
 .menu__search-input{
 
     width: 200px;
@@ -53,9 +53,9 @@ div i{
 .menu__search-icon{
     cursor: pointer;
 }
-
+*/
 /*Boton Ingresar */
-
+/*
 .btn-more {
     outline: none;
     cursor: pointer;
@@ -107,7 +107,7 @@ div i{
    } 
 
 /* menu */
-
+/*
    #menu ul{
     background-color: #4e95e7;
     list-style: none;
