@@ -1,79 +1,110 @@
-// Crear carga de datos de usuario en el formulario de registro
-import { usuarios } from "./usuarios.js";
+window.addEventListener("load", () => {
+  const form = document.getElementById("formRegistro");
+  const nombre = document.getElementById("sign-name");
+  const apellido = document.getElementById("sign-apellido");
+  const email = document.getElementById("sign-mail");
+  const password = document.getElementById("sign-pass");
+  const passConfirmar = document.getElementById("sign-pass2");
+  //   console.log(nombre)
+  //   console.log(apellido)
+  //   console.log(form)
+  //   console.log(email)
+  //   console.log(password)
+  //   console.log(password2)
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    validarCampos();
+  });
 
-let btnRegister = document.getElementById("btnRegistro");
-let name = document.getElementById("sign-name");
-let apellido = document.getElementById("sign-apellido");
-let email = document.getElementById("email");
-let password = document.getElementById("sign-pass");
-let password2 = document.getElementById("sign-pass2");
+  const validarCampos = () => {
+    // capturar valores
+    // trim para remover espacios en blanco
+    const nombreValor = nombre.value.trim();
+    const nombreValue = nombre.value.trim();
+    const apellidoValue = apellido.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const passConfirmarValue = passConfirmar.value.trim();
 
-// Verificar campo vacío
-btnRegister.addEventListener("click", function() {
-    if (
-        name.value === "" ||
-        apellido.value === "" ||
-        email.value === "" ||
-        password.value === "" ||
-        password2.value === "" 
-    ) {
-        swal("Error", "Todos los campos son obligatorios", "error", {
-            button: "Aceptar",
-        });
-        // alert("Debe completar todos los campos");
+    // verificar que no haya campos vacíos
+
+    // validar nombre
+    if (!nombreValue) {
+      //   console.log("CAMPO VACIO");
+      validarFalla(nombre, "No puede dejar el campo vacío");
     } else {
-        // Verificar usuario existente
-        if (usuarios[email.value] === undefined) {
-            // Verificar que las contraseñas sean iguales
-            if (password.value === password2.value) {
-                // Validar email
-                if (validateEmail(email.value)) {
-                    // Agregar usuario
-                    users[username.value] = password.value;
-
-                    // Verifica si se guardo el usuario {Solo para devs} TODO: Borrar a posteriori
-                    console.log(users);
-
-                    swal({
-                        title: "Registro exitoso",
-                        text: "El usuario se ha registrado correctamente",
-                        icon: "success",
-                        button: "Aceptar",
-                    }).then(function() {
-                        window.location.href = "../login-registro.htmllogin.html";
-                    });
-                    // alert("Usuario registrado con exito");
-                    // window.location.href = "./login.html";
-                } else {
-                    swal("Error", "El email no es valido", "error", {
-                        button: "Aceptar",
-                    });
-                }
-            } else {
-                swal({
-                    title: "Error",
-                    text: "Las contraseñas no coinciden",
-                    icon: "error",
-                    button: "Aceptar",
-                });
-                // alert("Las contraseñas no coinciden");
-            }
-        } else {
-            swal({
-                title: "Error",
-                text: "El usuario ya existe",
-                icon: "error",
-                button: "Aceptar",
-            });
-            // alert("El usuario ya existe");
-        }
+      validarOk(nombre, "");
     }
-});
 
-// Validar email
-function validateEmail(email) {
-    var re = /\S+@\S+\.\S+/;
+    // validar apellido
+    if (!apellidoValue) {
+      //   console.log("CAMPO VACIO");
+      validarFalla(apellido, "No puede dejar el campo vacío");
+    } else {
+      validarOk(apellido);
+    }
+
+    // validar email
+    // - campo vacío
+    // - expresiones regulares
+    if (!emailValue) {
+      // console.log("CAMPO VACIO");
+      validarFalla(email, "No puede dejar el email en blanco");
+    } else if (!validaEmail()) {
+      validarFalla(email, "El email es inválido");
+    }else {
+        validarOk(email);
+    }
+
+    // validar password
+    // - campo vacio
+    // - longitud
+    // - expresiones regulares
+    //          - dígito
+    //          - minúscula
+    //          - mayúscula
+    const er = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$/;
+    if (!passwordValue) {
+      validarFalla(password, "No puede dejar el campo vacío");
+    } else if (passwordValue.length < 8 || passwordValue.length > 12) {
+      validarFalla(password, "Debe tener entre 8 a 12 caracteres");
+    } else if (!passwordValue.match(er)) {
+      validarFalla(
+        password,
+        "Debe tener una mayúscula, una minúscula y un número"
+      );
+    } else {
+      validarOk(password);
+    }
+    // - campo vacio
+    // - contraseñas iguales
+    if (!passConfirmarValue) {
+      validarFalla(passConfirmar, "Confirme su contraseña");
+    } else if (passwordValue != passConfirmarValue) {
+      validarFalla(passConfirmar, "Las contraseñas no coinciden");
+    } else {
+      validarOk(passConfirmar);
+    }
+  };
+
+  const validarFalla = (input, msje) => {
+    const formControl = input.parentElement;
+    const aviso = formControl.querySelector(".aviso");
+    aviso.innerText = msje;
+    formControl.className = "form-control form-group falla";
+  };
+
+  const validarOk = (input, msje) => {
+    const formControl = input.parentElement;
+    const aviso = formControl.querySelector(".aviso");
+    formControl.className = "form-control form-group ok";
+  };
+
+  const validaEmail = (email) => {
+    let re = /\S+@\S+\.\S+/
     return re.test(email);
-}
-
-//
+    // return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    //   email
+    // );
+  };
+});
