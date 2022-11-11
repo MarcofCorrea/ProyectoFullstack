@@ -52,6 +52,7 @@ window.addEventListener("load", () => {
       validarFalla(email, "No puede dejar el email en blanco");
     } else if (!validaEmail()) {
       validarFalla(email, "El email es inválido");
+    //   resolver porque no pasa
     }else {
         validarOk(email);
     }
