@@ -10,15 +10,22 @@ window.addEventListener("load", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     validarCampos();
-    if(nombre.classList.contains("ok")|| apellido.classList.contains("ok")&& email.classList.contains("ok")&& password.classList.contains("ok")&& passConfirmar.classList.contains("ok") ){
-      alert(
-        "ok"
-      )
+    if (validar == true) {
+      // alert(
+      //   "ok"
+      // )
+      swal({
+        title: "Registro exitoso",
+        text: "El usuario se ha registrado correctamente",
+        icon: "success",
+        button: "Aceptar",
+      }).then(function () {
+        window.location.href = "./login-registro.html";
+      });
     } else {
-      alert(nombre.classList.contains("ok"),"error");
-    }
-    
-  });
+      swal("Error", "Revise los datos", "error", {
+        button: "Aceptar" });
+  }});
 
   const validarCampos = () => {
     // capturar valores
@@ -28,23 +35,29 @@ window.addEventListener("load", () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const passConfirmarValue = passConfirmar.value.trim();
-    
+
     // validar nombre
 
     if (!nombreValue) {
       validarFalla(nombre, "No puede dejar el campo vacío");
-      validar = false
+      validar = false;
     } else {
       validarOk(nombre, " ");
-      validar = true
+      validar = true;
     }
+
+    validar = false;
 
     // validar apellido
     if (!apellidoValue) {
       validarFalla(apellido, "No puede dejar el campo vacío");
+      validar = false;
     } else {
       validarOk(apellido, " ");
+      validar = true;
     }
+
+    validar = false;
 
     // validar email
     // - campo vacío
@@ -52,11 +65,15 @@ window.addEventListener("load", () => {
 
     if (!emailValue) {
       validarFalla(email, "No puede dejar el campo vacío");
+      validar = false;
     } else if (!validaEmail(emailValue)) {
       validarFalla(email, "El e-mail no es válido");
+      validar = false;
     } else {
       validarOk(email, " ");
+      validar = true;
     }
+    validar = false;
 
     // validar password
     // - campo vacio
@@ -70,38 +87,45 @@ window.addEventListener("load", () => {
 
     if (!passwordValue) {
       validarFalla(password, "No puede dejar el campo vacío");
+      validar = false;
     } else if (passwordValue.length < 8 || passwordValue.length > 12) {
       validarFalla(password, "Debe tener entre 8 a 12 caracteres");
+      validar = false;
     } else if (!passwordValue.match(er)) {
       validarFalla(
         password,
         "Debe tener una mayúscula, una minúscula y un número"
       );
+      validar = false;
     } else {
       validarOk(password, " ");
+      validar = true;
     }
+
+    validar = false;
 
     if (!passConfirmarValue) {
       validarFalla(passConfirmar, "No puede dejar el campo vacío");
+      validar = false;
     } else if (
       passConfirmarValue.length < 8 ||
       passConfirmarValue.length > 12
     ) {
       validarFalla(passConfirmar, "Debe tener entre 8 a 12 caracteres");
+      validar = false;
     } else if (!passConfirmarValue.match(er)) {
       validarFalla(
         passConfirmar,
         "Debe tener una mayúscula, una minúscula y un número"
       );
+      validar = false;
     } else if (passwordValue != passConfirmarValue) {
       validarFalla(passConfirmar, "Las contraseñas no coinciden");
+      validar = false;
     } else {
       validarOk(passConfirmar, " ");
+      validar = true;
     }
-
-
-
-    
   };
 
   // validar ok y falla
@@ -122,6 +146,4 @@ window.addEventListener("load", () => {
       /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
     return re.test(email);
   };
-
-  
 });
