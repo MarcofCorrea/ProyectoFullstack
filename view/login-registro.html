@@ -42,16 +42,19 @@
                       <form id="loginForm" class="section text-center needs-validation" novalidate
                         onsubmit="onEnviar()">
                         <h4 class="mb-4 pb-3">Inicio de sesion</h4>
-                        <div class="form-group has-validation">
+                        <div class="form-group">
                           <input type="email" name="logemail" id="email"
                             class="form-style form-check-input form-control" placeholder="Email" id="logemail"
                             minlength="14" maxlength="30" required>
                           <i class="input-icon bi bi-person-circle"></i>
+                          <div class="aviso"></div>
                         </div>
-                        <div class="form-group mt-2 has-validation">
+                        <div class="form-group mt-2">
                           <input type="password" name="logpass" class="form-style form-check-input form-control"
                             placeholder="Contraseña" id="password" minlength="8" maxlength="12" required>
                           <i class="input-icon bi bi-key"></i>
+                          <div class="aviso"></div>
+
                         </div>
                         <a href="../index.html"><button id="btn-login" class="btn mt-4"
                             type="submit"><span>Ingresar</span></button></a>

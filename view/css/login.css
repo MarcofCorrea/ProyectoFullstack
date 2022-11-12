@@ -106,6 +106,7 @@ h6 span {
   display: block;
   margin: 0;
   padding: 0;
+  border : none;
 }
 
 .form-style {
@@ -194,6 +195,51 @@ h6 span {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+}
+
+.form-control.ok input {
+  border: 0.1px solid;
+  border-color: #199d50;
+}
+
+.form-control.ok >.input-icon {
+  color: #199d50;
+}
+
+.form-control.ok input {
+  border: 0.1px solid;
+  border-color: #199d50;
+}
+
+.form-control.falla input {
+  border: 0.1px solid;
+  border-color: #fe5f55;
+}
+
+.form-control.ok div.aviso {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 500;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.form-control.falla div.aviso {
+  visibility: visible;
+  font-size: small;
+  font-weight: 500;
+  color: #e74c3c;
+  text-align: right;
+}
+
+.form-control.falla>.input-icon {
+  color: #e74c3c;
+}
+
+.form-control.falla input {
+  border: 0.1px solid;
+  border-color: #fe5f55;
 }
 
 .btn {
