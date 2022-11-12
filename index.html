@@ -42,7 +42,7 @@
     <img src="./view/images/identidad/El-anzuelo-logo.png" alt="logo de el anzuelo">
 
     </a>
-    <div>
+    <div class="ingreso">
       <input type="search" class="menu__search-input" placeholder="¿Qué deseas buscar?">
       <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
 
@@ -188,12 +188,13 @@
   <!-- SECCION NEWSLETTER 
   ================================================== -->
 
-  <section class="col-md-6  rounded  container text-center bg-info p-5 mt-4 ml-10 mr-10">
+  <section class="col container-news text-center bg-info p-5 mt-4">
     <h3 class="headline back text-white">REGISTRATE A NUESTRO NEWSLETTER</h3>
-    <form class="main-form " method="post" action="./">
-      <input id="email" class="width" name="email" type="text" placeholder="Introduzca su e-mail" />
-      <button type="button" class="btn btn-more btn-outline-secondary btn-lg">REGISTRARSE</button>
-    </form>
+    <form class="input-group">
+      <input type="email" class="input-group__email" id="Email" name="Email" placeholder="Introduzca su e-mail" autocomplete="off">
+      <input class="button--submit-news" value="Subscribirse" type="submit">
+  </form>
+    
   </section>
 
 
