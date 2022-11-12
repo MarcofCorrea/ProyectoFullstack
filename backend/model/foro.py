@@ -8,6 +8,6 @@ class Foro:
         return self.titulo 
     def setTitulo(self, titulo):
         self.titulo = titulo   
-    def setost(self, post):
+    def setPost(self, post):
         self.post = post  
     
