@@ -5,56 +5,57 @@ window.addEventListener("load", () => {
   const email = document.getElementById("sign-mail");
   const password = document.getElementById("sign-pass");
   const passConfirmar = document.getElementById("sign-pass2");
-  //   console.log(nombre)
-  //   console.log(apellido)
-  //   console.log(form)
-  //   console.log(email)
-  //   console.log(password)
-  //   console.log(password2)
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    validarCampos();
+    if (validarCampos() === true ) {
+      console.log("pasa");
+      swal({
+        title: "Registro exitoso",
+        text: "El usuario se ha registrado correctamente",
+        icon: "success",
+        button: "Aceptar",
+      }).then(function () {
+        window.location.href = "./login-registro.html";
+      });
+      
+    } 
   });
 
   const validarCampos = () => {
     // capturar valores
     // trim para remover espacios en blanco
-    const nombreValor = nombre.value.trim();
     const nombreValue = nombre.value.trim();
     const apellidoValue = apellido.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const passConfirmarValue = passConfirmar.value.trim();
 
-    // verificar que no haya campos vacíos
-
     // validar nombre
+
     if (!nombreValue) {
-      //   console.log("CAMPO VACIO");
       validarFalla(nombre, "No puede dejar el campo vacío");
     } else {
-      validarOk(nombre, "");
+      validarOk(nombre, " ");
     }
 
     // validar apellido
     if (!apellidoValue) {
-      //   console.log("CAMPO VACIO");
       validarFalla(apellido, "No puede dejar el campo vacío");
     } else {
-      validarOk(apellido);
+      validarOk(apellido, " ");
     }
 
     // validar email
     // - campo vacío
     // - expresiones regulares
+
     if (!emailValue) {
-      // console.log("CAMPO VACIO");
-      validarFalla(email, "No puede dejar el email en blanco");
-    } else if (!validaEmail()) {
-      validarFalla(email, "El email es inválido");
-    //   resolver porque no pasa
-    }else {
-        validarOk(email);
+      validarFalla(email, "No puede dejar el campo vacío");
+    } else if (!validaEmail(emailValue)) {
+      validarFalla(email, "El e-mail no es válido");
+    } else {
+      validarOk(email, " ");
     }
 
     // validar password
@@ -64,7 +65,9 @@ window.addEventListener("load", () => {
     //          - dígito
     //          - minúscula
     //          - mayúscula
+
     const er = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$/;
+
     if (!passwordValue) {
       validarFalla(password, "No puede dejar el campo vacío");
     } else if (passwordValue.length < 8 || passwordValue.length > 12) {
@@ -75,37 +78,44 @@ window.addEventListener("load", () => {
         "Debe tener una mayúscula, una minúscula y un número"
       );
     } else {
-      validarOk(password);
+      validarOk(password, " ");
     }
-    // - campo vacio
-    // - contraseñas iguales
+
     if (!passConfirmarValue) {
-      validarFalla(passConfirmar, "Confirme su contraseña");
+      validarFalla(passConfirmar, "No puede dejar el campo vacío");
+    } else if (
+      passConfirmarValue.length < 8 ||
+      passConfirmarValue.length > 12
+    ) {
+      validarFalla(passConfirmar, "Debe tener entre 8 a 12 caracteres");
+    } else if (!passConfirmarValue.match(er)) {
+      validarFalla(
+        passConfirmar,
+        "Debe tener una mayúscula, una minúscula y un número"
+      );
     } else if (passwordValue != passConfirmarValue) {
       validarFalla(passConfirmar, "Las contraseñas no coinciden");
     } else {
-      validarOk(passConfirmar);
+      validarOk(passConfirmar, " ");
     }
   };
 
+  // validar ok y falla
   const validarFalla = (input, msje) => {
     const formControl = input.parentElement;
     const aviso = formControl.querySelector(".aviso");
     aviso.innerText = msje;
-    formControl.className = "form-control form-group falla";
+    formControl.className = "form-control form-group falla mt-1";
   };
 
   const validarOk = (input, msje) => {
     const formControl = input.parentElement;
-    const aviso = formControl.querySelector(".aviso");
-    formControl.className = "form-control form-group ok";
+    formControl.className = "form-control form-group ok mt-2";
   };
 
   const validaEmail = (email) => {
-    let re = /\S+@\S+\.\S+/
+    let re =
+      /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
     return re.test(email);
-    // return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    //   email
-    // );
   };
 });

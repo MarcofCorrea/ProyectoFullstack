@@ -107,6 +107,7 @@ h6 span {
   display: block;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .form-style {
@@ -227,7 +228,10 @@ h6 span {
 
 .form-control.falla div.aviso {
   visibility: visible;
+  font-size: small;
+  font-weight: 500;
   color: #e74c3c;
+  text-align: right;
 }
 
 .form-control.falla>.input-icon {
