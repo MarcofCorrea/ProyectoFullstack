@@ -5,21 +5,19 @@ window.addEventListener("load", () => {
   const email = document.getElementById("sign-mail");
   const password = document.getElementById("sign-pass");
   const passConfirmar = document.getElementById("sign-pass2");
+  var validar = false;
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if (validarCampos() === true ) {
-      console.log("pasa");
-      swal({
-        title: "Registro exitoso",
-        text: "El usuario se ha registrado correctamente",
-        icon: "success",
-        button: "Aceptar",
-      }).then(function () {
-        window.location.href = "./login-registro.html";
-      });
-      
-    } 
+    validarCampos();
+    if(nombre.classList.contains("ok")|| apellido.classList.contains("ok")&& email.classList.contains("ok")&& password.classList.contains("ok")&& passConfirmar.classList.contains("ok") ){
+      alert(
+        "ok"
+      )
+    } else {
+      alert(nombre.classList.contains("ok"),"error");
+    }
+    
   });
 
   const validarCampos = () => {
@@ -30,13 +28,15 @@ window.addEventListener("load", () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const passConfirmarValue = passConfirmar.value.trim();
-
+    
     // validar nombre
 
     if (!nombreValue) {
       validarFalla(nombre, "No puede dejar el campo vacío");
+      validar = false
     } else {
       validarOk(nombre, " ");
+      validar = true
     }
 
     // validar apellido
@@ -98,6 +98,10 @@ window.addEventListener("load", () => {
     } else {
       validarOk(passConfirmar, " ");
     }
+
+
+
+    
   };
 
   // validar ok y falla
@@ -118,4 +122,6 @@ window.addEventListener("load", () => {
       /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
     return re.test(email);
   };
+
+  
 });
