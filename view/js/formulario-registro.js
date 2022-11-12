@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
       // )
       swal({
         title: "Registro exitoso",
-        text: "El usuario se ha registrado correctamente",
+        text: "Se ha registrado correctamente",
         icon: "success",
         button: "Aceptar",
       }).then(function () {
