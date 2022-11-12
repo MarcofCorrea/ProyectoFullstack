@@ -17,6 +17,8 @@
     <!-- normalize -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/registro.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 </head>
 
@@ -24,46 +26,66 @@
 
     <div class="container-login">
         <!-- Logo -->
-        <a href="index.html" class="logo" target="_blank">
-            <img src="./images/identidad/El-anzuelo-logo.png" alt="logo el anzuelo">
-        </a>
+        <header>
+            <a href="../index.html" class="logo">
+                <img src="./images/identidad/El-anzuelo-logo.png" alt="logo el anzuelo">
+            </a>
+        </header>
 
         <!-- Form -->
-        <div class="section">
+        <section class="section resgistro">
             <div class="container">
                 <div class="row full-height justify-content-center">
                     <div class="col-12 text-center align-self-center py-3">
-                        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        <div class="section pb-3 pt-3 pt-sm-4 text-center">
                             <div class="card-3d-wrap mx-auto">
                                 <div class="card-3d-wrapper">
                                     <div class="card-front">
                                         <div class="center-wrap pt-3 pb-3">
-                                            <div class="section text-center">
+                                            <!-- form -->
+                                            <form class="section text-center" id="formRegistro" novalidate>
                                                 <h4 class="mb-4 pb-3">Resgistrarse</h4>
-                                                <div class="form-group">
-                                                    <input type="text" name="sign-name" class="form-style"
-                                                        placeholder="Nombre" id="sign-name" required>
-                                                    <i class="input-icon bi-person-circle"></i>
-                                                </div>
-                                                <div class="form-group mt-2">
-                                                    <input type="text" name="sign-apellido" class="form-style" placeholder="Apellido" id="sign-apellido"
+                                                <div class="form-group form-control">
+                                                    <input type="text" name="sign-name" class="form-style "
+                                                        placeholder="Nombre" id="sign-name" minlength="3" maxlength="60"
                                                         required>
+                                                    <i id="iconName" class="input-icon bi-person-circle"></i>
+                                                    <div class="aviso"></div>
+                                                </div>
+                                                <div class="form-group  form-control mt-2">
+                                                    <input type="text" name="sign-apellido" class="form-style"
+                                                        placeholder="Apellido" id="sign-apellido" minlength="3"
+                                                        maxlength="60" required>
                                                     <i class="input-icon bi-person-circle"></i>
+                                                    <div class="aviso"></div>
+
                                                 </div>
-                                                <div class="form-group mt-2">
-                                                    <input type="email" name="sign-mail" class="form-style" placeholder="Email" id="sign-mail" required>
+                                                <div class="form-group  form-control mt-2">
+                                                    <input type="email" name="sign-mail" id="sign-mail"
+                                                        class="form-style" placeholder="Email" id="sign-mail"
+                                                        minlength="10" maxlength="60" required>
                                                     <i class="input-icon bi-envelope"></i>
+                                                    <div class="aviso"></div>
                                                 </div>
-                                                <div class="form-group mt-2">
-                                                    <input type="password" name="sign-pass" class="form-style" placeholder="Contraseña" id="sign-pass"
-                                                        autocomplete="off" required>
+                                                <div class="form-group  form-control mt-2">
+                                                    <input type="password" name="sign-pass" class="form-style"
+                                                        placeholder="Contraseña" id="sign-pass" autocomplete="off"
+                                                        minlength="8" maxlength="12" required>
                                                     <i class="input-icon bi bi-key"></i>
+                                                    <div class="aviso"></div>
+                                                </div>
+                                                <div class="form-group  form-control mt-2">
+                                                    <input type="password" name="sign-pass2" class="form-style"
+                                                        placeholder="Repetir contraseña" id="sign-pass2"
+                                                        autocomplete="off" minlength="8" maxlength="12" required>
+                                                    <i class="input-icon bi bi-key"></i>
+                                                    <div class="aviso"></div>
                                                 </div>
                                                 <a href="login-registro.html">
-                                                    <button class="mt-4 btn"><span>Registrarse</span></button> </a>
+                                                    <button id="btnRegistro" class="mt-4 btn" type="submit" ><span>Registrarse</span></button> </a>
                                                 <p class="mb-0 mt-4 text-center"><a href="./login-registro.html"
                                                         class="link">Iniciar sesion</a></p>
-                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +94,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <!--Waves Container-->
 
@@ -83,7 +105,7 @@
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" ) />
                 <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
                 <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
                 <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
@@ -99,8 +121,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <!-- JS de registro -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/formulario-registro.js"></script>
+  
+
+
 </body>
 
 </html>
-<!--  -->
-

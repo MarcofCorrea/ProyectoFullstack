@@ -127,3 +127,13 @@ div i {
 #menu ul li a:hover {
     background-color: #0075ff;
 }
+
+@media (max-width: 768px) {
+    .menu__search-input {
+        visibility: hidden;
+    }
+
+    .menu__search-icon {
+        visibility: hidden;
+    }
+}

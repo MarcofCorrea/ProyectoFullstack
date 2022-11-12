@@ -37,7 +37,7 @@
 
   <!-- Encabezado Header -->
   <header>
-    <a ref="#" class="logo">
+    <a href="../index.html" class="logo">
       <img src="./images/identidad/El-anzuelo-logo.png" alt="logo de la tienda">
     </a>
     <div>
@@ -52,17 +52,39 @@
     </div>
   </header>
   <!-- NAV MENU -->
-  <nav>
-    <div id="menu">
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="clima.html">clima</a></li>
-        <li><a href="calendarios.html">calendario</a></li>
-        <li><a href="shop.html">e-shop</a></li>
-        <li><a href="foro.html">foro</a></li>
-        <li><a href="blog.html">blog</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid">
+      <button class="navbar-toggler navbar navbar-light bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item p-2">
+            <a href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="../view/clima.html">CLIMA</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="../view/calendarios.html">CALENDARIO</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="../view/shop.html">E-SHOP</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="../view/foro.html">FORO</a>
+          </li>
+          <li class="nav-item py-2">
+            <a href="../view/blog.html">BLOG</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="../view/contacto.html">CONTACTO</a>
+          </li>
+  
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -155,49 +177,82 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container__footer">
-      <div class="box__footer">
-        <div class="logo-footer">
-          <img src="images/identidad/El-anzuelo-logo.png" alt="">
+    <div class="container py-4">
+      <div class="row">
+
+        <div class="col">
+          <img src="/view/images/identidad/El-anzuelo-icono.png" alt="">
         </div>
-        <div class="subscribe-footer">
-          <div class="group-subs">
-            <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
-              autocomplete="off">
-            <input class="button--submit" value="Subscribite" type="submit">
-          </div>
+
+
+        <div class="col-lg-3">
+          <input type="email" class="input subscribe-footer__input" id="Email" name="Email" placeholder="Email"
+            autocomplete="off">
+          <input class="button--submit" value="Subscribite" type="submit">
         </div>
-      </div>
-      <div class="box__footer">
-        <h2>Soluciones</h2>
-        <a href="https://www.google.com">App Desarrollo</a>
-        <a href="#">App Marketing</a>
-        <a href="#">IOS Desarrollo</a>
-        <a href="#">Android Desarrollo</a>
-      </div>
-
-      <div class="box__footer">
-        <h2>Compañia</h2>
-        <a href="#">Acerca de</a>
-        <a href="#">Trabajos</a>
-        <a href="#">Procesos</a>
-        <a href="#">Servicios</a>
-      </div>
-
-      <div class="box__footer">
-        <h2>Redes Sociales</h2>
-        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-      </div>
-
+    
+    
+        <div class="col">
+          <h2>Soluciones</h2>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">App Desarrollo</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">App Marketing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">IOS Desarrollo</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Android Desarrollo</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="col">
+          <h2>Compañia</h2>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Acerca de</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Trabajos</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Procesos</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Servicios</a>
+            </li>
+          </ul>
+        </div>
+    
+    
+        <div class="col">
+          <h2>Compañia</h2>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="box__copyright">
+          <hr>
+          <p></b>El anzuelo</p>
+        </div>
     </div>
-    <div class="box__copyright">
-      <hr>
-      <p></b>El anzuelo</p>
-    </div>
-  </footer>
+</footer>
 
 
 
@@ -213,8 +268,10 @@
 
 
 
-  <!--Bootstrap-->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
 </body>
 
