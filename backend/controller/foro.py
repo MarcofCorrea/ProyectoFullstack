@@ -32,24 +32,6 @@ def InsertarPost(self, titulo, post):
 
 
 
-#Leer consulta a la seccion FORO 
-def buscarPost (self):
-    if self.conexion.is_connected():
-        try:
-            cursor= self.conexion.cursor()
-            sentenciaSQL= "SELECT * from post where titulo like '%DORADO%'" 
-            cursor.execute(sentenciaSQL)
-            resultadoFORO = cursor.fetchall()
-            self.conexion.close()
-            return resultadoFORO
-        
-        except:
-             print ("No se pudo conectar a la base de datos")
-
-
-
-
-
 #Eliminar consulta seccion FORO - DELETE
 def EliminarPost (self, ID):
     if self.conexion.is_connected():
