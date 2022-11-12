@@ -72,7 +72,7 @@ h6 span {
   width: 100%;
   height: 70vh;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 0;
 }
 
@@ -363,7 +363,47 @@ h6 span {
   }
 }
 
+@media (max-width: 380px) {
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    display: block;
+    z-index: 100;
+    filter: invert();
+  }
 
+  .logo img {
+    min-height: 3rem;
+    max-height: 4rem;
+    width: auto;
+    display: block;
+  }
+
+  .center-wrap {
+    position: absolute;
+    width: 100%;
+    padding: 0 5px;
+    top: 60%;
+    left: 0;
+    transform: translate3d(0, -40%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+  }
+  .card-3d-wrapper {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  .card-3d-wrap {
+    position: relative;
+    max-width: 100%;
+    margin-top: .9rem;
+  }
+
+}
 @media (max-width: 576px) {
   .logo {
     position: absolute;
@@ -376,7 +416,7 @@ h6 span {
 
   .logo img {
     min-height: 4rem;
-    max-height: 8rem;
+    max-height: 5rem;
     width: auto;
     display: block;
   }
@@ -385,20 +425,24 @@ h6 span {
     position: absolute;
     width: 100%;
     padding: 0 15px;
-    top: 50%;
+    top: 60%;
     left: 0;
-    transform: translate3d(0, -50%, 35px) perspective(100px);
+    transform: translate3d(0, -60%, 35px) perspective(100px);
     z-index: 20;
     display: block;
   }
-
+  .card-3d-wrapper {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
   .card-3d-wrap {
     position: relative;
     width: 350px;
     max-width: 100%;
-    height: 350px;
-    max-height: 400px;
-    margin-top: 1rem;
+    margin-top: .9rem;
   }
 
 }
@@ -431,12 +475,5 @@ h6 span {
     max-width: 100%;
     height: 350px;
     margin-top: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .waves {
-    height: auto;
-    min-height: 180px;
   }
 }
