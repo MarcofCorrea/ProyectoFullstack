@@ -27,4 +27,3 @@ class Producto:
         return self.pId
     def setId(self, n):
         self.pId = n
-

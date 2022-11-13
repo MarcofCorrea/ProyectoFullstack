@@ -32,4 +32,3 @@ class Usuario:
         return self.id
     def setId(self, n):
         self.id = n
-
