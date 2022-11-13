@@ -71,7 +71,7 @@ form.input-group {
   }
   
   .button--submit-news:hover {
-    background-color: #1d1d80;
+    opacity: 98%;
   }
   
   .input-group__email:focus, .input-group__email:focus-visible {
@@ -203,6 +203,7 @@ form.input-group {
 
 /* SECCION - FORO */
 
+
 .container-foro{
 display: flex;
 padding: 30px;
@@ -242,15 +243,5 @@ flex-wrap: wrap;
     
 }
 
-/*FIN SECCION FORO */
-
-
-
-
-
-
-
-
-
-
+/* FIN SECCION - FORO */
 
