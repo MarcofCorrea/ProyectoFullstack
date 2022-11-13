@@ -5,9 +5,9 @@ class Foro:
     def __str__(self):
         return f'Titulo: {self.titulo}, Post: {self.post}'
     def getTitulo(self):
-        return self.titulo 
+        return self.titulo
     def setTitulo(self, titulo):
-        self.titulo = titulo   
+        self.titulo = titulo
     def setPost(self, post):
-        self.post = post  
-    
+        self.post = post
+
