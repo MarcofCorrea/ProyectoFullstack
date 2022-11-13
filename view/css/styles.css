@@ -71,7 +71,7 @@ form.input-group {
   }
   
   .button--submit-news:hover {
-    background-color: #ffffff98;
+    opacity: 98%;
   }
   
   .input-group__email:focus, .input-group__email:focus-visible {
