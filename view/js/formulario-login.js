@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
         icon: "success",
         button: "Aceptar",
       }).then(function () {
-        window.location.href = "../index.html";
+        window.location.href = "https://marcofcorrea.github.io/ProyectoFullstack/index.html";
       });
     } else {
       swal("Error", "Revise los datos", "error", {
