@@ -1,1 +1,0 @@
-#categoria.py#
