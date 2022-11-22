@@ -108,3 +108,11 @@
     height: 35px;
     border-radius: 100%;
    }
+
+
+   @media (max-width:992px){
+    .checkout-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   }

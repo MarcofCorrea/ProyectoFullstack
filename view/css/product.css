@@ -160,3 +160,13 @@ a{
 }
  .input.product-cantidad[type='number']:hover {
   outline-color: rgb(127, 170, 170);}
+
+  @media (max-width: 1200px) {
+    .card-product{
+      flex-direction: column;
+      align-items:center ;
+    }
+    .container-data-product{
+      margin-top: 2rem;
+    }
+  }
